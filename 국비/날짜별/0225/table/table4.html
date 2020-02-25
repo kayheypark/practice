@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인증사이트통계</title>
+</head>
+
+<style type="text/css" rel="stylesheet">
+    tr, td {
+            text-align: center;
+            width: 150px;
+            height: 20px;
+            }
+</style>
+
+<body>
+
+<!-- 
+    scope / id, headers
+ -->
+
+    <h2><img src="title01.jpg" alt="인증사이트 통계"></h2>
+    <p>Home > 품질마크 > 인증사이트 통계</p>
+    <table border="1" summary="인증사이트 통계">
+        <caption>인증사이트 통계</caption>
+    <colgroup>
+        <col />
+    </colgroup>
+    <colgroup>
+        <col />
+        <col />
+        <col />
+    </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" id="year">연도</th>
+                <th scope="col" id="apply">신청 사이트 수</th>
+                <th scope="col" id="conf">인증 사이트 수</th>
+                <th scope="col" id="pass">합격률</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <th scope="row" id="total">합계</th>
+            <td headers="apply total">1631</td>
+            <td headers="conf total">538</td>
+            <td headers="pass total">32.99%</td>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row" id="y2007">2007년</th>
+                <td headers="y2007 apply">40</td>
+                <td headers="y2007 conf">15</td>
+                <td headers="y2007 pass">37.5%</td>
+            </tr>
+            <tr>
+                <th scope="row" id="y2008">2008년</th>
+                <td headers="y2008 apply">123</td>
+                <td headers="y2008 conf">44</td>
+                <td headers="y2008 pass">35.77%</td>
+            </tr>
+            <tr>
+                <th scope="row" id="y2009">2009년</th>
+                <td headers="y2009 apply">579</td>
+                <td headers="y2009 conf">96</td>
+                <td headers="y2009 pass">16.58%</td>
+            </tr>
+            <tr>
+                <th scope="row" id="y2010">2010년</th>
+                <td headers="y2010 apply">665</td>
+                <td headers="y2010 conf">271</td>
+                <td headers="y2010 pass">40.75%</td>
+            </tr>
+            <tr>
+                <th scope="row" id="y2011">2011년</th>
+                <td headers="y2011 apply">313</td>
+                <td headers="y2011 conf">112</td>
+                <td headers="y2011 pass">35.78%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
