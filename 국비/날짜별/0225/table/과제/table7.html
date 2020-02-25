@@ -19,23 +19,83 @@
         </colgroup>
         <thead>
             <tr>
-                <th scope="col">공개대상</th>
+                <th scope="col" rowspan="2">공개대상</th>
                 <th scope="col" colspan="4">공개방법 및 수수료</th>
+            </tr>
+            <tr>
+                <th id="FileWatch">원본의 열람·시청</th>
+                <th id="FileCopyed">원본의 사본(출력물)·복제물·인화물</th>
+                <th id="FileElecWatch">전자파일의 열람·시청</th>
+                <th id="FileElecCopyed">전자파일의 사본(출력물)·복제물</th>
             </tr>
 
             <tr>
-                <th>문서·대장 등</th>
-                <td>열람</td>
-                <td>사본</td>
-                <td>열람</td>
-                <td>사본</td>
+                <th id="file">문서·대장 등</th>
+                <td headers="file FileWatch">
+                    ◇◇열람<br />
+                    1건(10매 기준) 1<br />
+                    회 : 200원<br />
+                    10매 초과 시 5매<br />
+                    마다 100원
+                </td>
+                <td headers="file FileCopyed">
+                    ◇사본 (1개 기준)<br />
+                    A3이상 300원<br />
+                    1매 초과 마다 100원<br />
+                    B4이하 250원<br />
+                    1매 초과 마다 50원
+                </td>
+                <td headers="file FileElecWatch">
+                    ◇열람<br />
+                    1건 (10매 기준)<br />
+                    1회 : 200원<br />
+                    10매초과 5매마<br />
+                    다 100원
+                </td>
+                <td headers="file FileElecCopyed">
+                    ◇사본 (종이출력물)<br />
+                    A3이상 300원<br />
+                    1매 초과 마다 100원<br />
+                    B4이하 250원<br />
+                    1매 초과 마다 50원<br />
+                    복제<br />
+                    1건 (10매 기준) 1회 : 200원<br />
+                    10매 초과시 5매마 다 100원<br />
+                    ※매체비용 별도
+                </td>
             </tr>
             <tr>
-                <th>도면·카드등</th>
-                <td>열람</td>
-                <td>사본</td>
-                <td>열람</td>
-                <td>사본</td>
+                <th id="card">도면·카드등</th>
+                <td headers="file FileWatch">
+                    ◇열람<br />
+                    1매 200원<br />
+                    1매 초과 마다 100<br />
+                    원
+                </td>
+                <td headers="file FileCopyed">
+                    ◇사본 (1매 기준)<br />
+                    A3이상 300원<br />
+                    1매 초과 마다 100원<br />
+                    B4이하 250원<br />
+                    1매 초과 마다 50원
+                </td>
+                <td headers="file FileElecWatch">
+                    ◇열람<br />
+                    1매 200원<br />
+                    1매 초과 마다<br />
+                    100원<br />
+                </td>
+                <td headers="file FileElecCopyed">
+                    ◇사본 (종이출력물)
+                    A3이상 300원<br />
+                    1매 초과 마다 100원<br />
+                    B4이하 250원<br />
+                    1매 초과 마다 50원<br />
+                    복제<br />
+                    1건 (10매 기준) 1회 : 200원<br />
+                    10매 초과시 5매마다 100원<br />
+                    ※매체비용 별도
+                </td>
             </tr>
         </thead>
         <tbody></tbody>
