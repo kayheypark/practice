@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- time요소 , 년월일T시분초.밀리초(1000분의1초)Z국제표준시,+-지역표준시, -->
+    <time datetime="2020-02-27T12:07:59.000Z">2020-02-27</time>
+
+    <!-- mark요소, 키워드 강조 -->
+    <p>
+        <mark>html5</mark>와 css3는 w3c 국제 표준화 단체에서 권고안을 작성해서 배포합니다.
+        <mark>html5</mark>를 이용하면 반응형 웹 뿐만 아니라
+        <mark>html5</mark> 웹앱을 만들 수 있습니다. 또한 하이브리드 앱도
+        <mark>html5</mark>로 만들수 있습니다.
+    </p>
+
+    <!-- a요소, 모든 블록레벨요소를 감쌀 수 있다. -->
+    <a href="#">
+        <div>
+            <p></p>
+        </div>
+    </a>
+
+    <!-- i요소:기울임, b요소:굵게, small요소:작은글씨 -->
+    <p>
+        <i>기울임, 외국어, 분류학적인 용어, 기술 용어, 대본 지문, 생각이나 손으로 직접 쓴 글 등
+        다 텍스트와 구별하기 위해</i>
+    </p>
+    <p>
+       <b>중요하지는 않지만 굵게 보이게 하기 위해서 쓴다.</p></b>
+    </p>
+    <p>
+       <small>작은 글씨. 푸터 안에 정보, 이용약관, 단서와 세부사항과 같은 부가적인 주석, 짧은 문장에 사용</small>
+    </p>
+    <!-- progress:다운로드 진행표시줄로 사용,
+    meter요소:디스크 사용량 등 버뮈가 지정된 요소를 표시할 때 사용 -->
+    <p>
+        다운로드 상태:
+        <progress max="100" value="52"><span>0</span>%</progress>
+    </p>
+    <p>
+        <meter min="0" max="320" value="310" low="10" high="300" optimum="320">64GB</meter>
+    </p>
+    <!-- figure, figcaption : 차트, 그래프, 이미지, 소스코드 ,다이어그램 표시-->
+    <figure>
+        <img src="cat.png" alt="고양이" />
+        <figurecaption>고양이 사진</figurecaption>
+    </figure>
+    <figure>
+        <img src="computer-mouse-pic.png" alt="고양이" />
+        <img src="computer-mouse-pic.png" alt="고양이" />
+        <img src="computer-mouse-pic.png" alt="고양이" />
+        <figurecaption>컴퓨터 마우스 사진</figurecaption>
+    </figure>
+    
+</body>
+</html>

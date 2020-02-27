@@ -6,8 +6,15 @@
     <title>회원가입</title>
 </head>
 <body>
+    <!-- 
+        인풋 속성:
+        readonly
+        disabled
+        placeholder      
+     -->
     <h2> 기본 회원 정보</h2>
-    <p><strong><img src="images/icon2.gif" alt="필수사항사진"></strong>표시 필수 사항</p>
+    <p><strong><img src="images/icon2.gif" alt="필수" /></strong>필수 입력 사항</p>
+    <form action="" method="POST">
     <fieldset>
         <legend><img src="images/icon.jpg" alt="기본회원정보" />기본회원정보</legend>
         <table border="1" summary="기본회원정보입니다.">
@@ -17,21 +24,21 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userNameKor">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             한글이름
                         </label>
                     </th>
                     <td>
-                        <input type="text" id="userNameKor" />
+                        <input type="text" id="userNameKor" value="홍길동"  readonly disabled />
                         반드시 실명을 입력해주시기 바랍니다.
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userNameEng">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             영문이름
                         </label>
                     </th>
@@ -41,21 +48,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userId">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             회원 아이디
                         </label>
                     </th>
                     <td>
                         <input type="text" id="userId" />
-                        <a href="#"><img src="images/overalp.jpg" alt="중복검사"></a>
+                        <input type="image" src="images/overalp.jpg" alt="중복검사" />
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userPw">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             회원 비밀번호
                         </label>
                     </th>
@@ -65,9 +72,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userPw2">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             비밀번호 확인
                         </label>
                     </th>
@@ -76,9 +83,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userEmail" title="이메일 아이디를 입력하세요">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             신청자 E-Mail
                         </label>
                     </th>
@@ -88,32 +95,32 @@
                         <input type="email" title="도메인을 입력하세요" />
                         <select name="email" id="">
                             <option value="none">직접입력</option>
-                            <option value="naver">네이버</option>
-                            <option value="google">구글</option>
-                            <option value="kakao">카카오</option>
-                            <option value="daum">다음</option>
+                            <option value="naver.com">네이버</option>
+                            <option value="google.com">구글</option>
+                            <option value="kakao.com">카카오</option>
+                            <option value="daum.com">다음</option>
                         </select>
-                        <a href="#"><img src="images/overalp.jpg" alt="중복검사"></a>
-                        허위기재시 비밀번호 찾기 등을 이용할 수 없습니다.
+                        <input type="image" src="images/overalp.jpg" alt="중복검사" />
+                        <span>허위기재시 비밀번호 찾기 등을 이용할 수 없습니다.</span>
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userPost"">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             우편번호
                         </label>
                     </th>
                     <td>
                         <input type="text" id="userPost" /> - 
                         <input type="text" id="userPost" />
-                        <a href="#"><img src="images/post.jpg" alt="필수사항사진"></a>
+                        <input type="image" src="images/post.jpg" alt="중복검사" />
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userAddrKor">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             주소
                         </label>
                     </th>
@@ -122,9 +129,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userAddrEng">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             영문주소
                         </label>
                     </th>
@@ -133,9 +140,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userCell">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             신청자 전화번호
                         </label>
                     </th>
@@ -144,9 +151,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th scope="row">
                         <label for="userPhone">
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             신청자 휴대전화
                         </label>
                     </th>
@@ -155,8 +162,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>
-                            <strong><img src="images/icon2.gif" alt="필수사항사진"></strong>
+                    <th scope="row">
+                            <strong><img src="images/icon.jpg" alt="기본회원정보" /></strong>
                             이메일 수신여부
                     </th>
                     <td>
@@ -173,8 +180,11 @@
                 </tr>                
             </tbody>
         </table>
-        <input type="submit" value="확인" />
-        <input type="reset" value="취소" />
+        <p>
+            <input type="submit" value="확인" />
+            <input type="reset" value="취소" />
+        </p>
     </fieldset>
+</form>
 </body>
 </html>

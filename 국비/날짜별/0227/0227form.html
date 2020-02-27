@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!--
+
+        placehodler : 힌트
+        autofocus :
+        requierd : 필수입력항목
+        
+        <viewport> : 실제 내용이 표시되는 영역
+        initioal-scale : 초기 배율, 기본값 1, 1보다 작으면 축소페이지, 1보다 크면 확대 페이지 표시
+        minimum-scale : 최소확대배율, 기본값 0.25, 가로값 기준
+        maximum-scale : 최대축소배율, 기본값 5.0
+        user-scalable=no : 사용자가 페이지 확대 축소 여부 지정, 기본값 yes
+
+     -->
+     
+    <form action="" method="POST">
+        <fieldset>
+            <legend>개인정보입력</legend>
+            <ol>
+                <li>
+                    <label for="userName">이름</label>
+                    <input type="text" id="userName" placeholder="5자 미만 공백없이" autofocus required />
+                </li>
+                <li>
+                    <label for="userPw">비밀번호</label>
+                    <input type="password" id="userPw" placeholder="8자 이상 12자 이하, 영소문자 숫자 특수기호 포함" required />
+                </li>
+                <li>
+                    <label for="userPhone">전화번호</label>
+                    <input type="tel" id="userPhone" placeholder="02)111-1111"" required />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>주문내역</legend>
+            <ol>
+                <li>
+                    <label for="prodId">상품명</label>
+                    <input type="text" id="prodId" />
+                </li>
+                <li>
+                    <label for="order">주문 개수</label>
+                    <input type="number" id="order" min="0" max="100" value="0" step="10" />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>배송주소</legend>
+            <ol>
+                <li>
+                    <label for="address">우편물주소</label>
+                    <textarea name="" id="address" cols="30" rows="5" placeholder="도로명주소 입력" required></textarea>
+                </li>
+                <li>
+                    <label for="postcode">우편번호</label>
+                    <input type="tel" id="postcode" placeholder="새우편번호 입력" required />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>상품검색</legend>
+            <ol>
+                <li>
+                    <label for="srch">상품검색</label>
+                    <input type="search" id="srch" />
+                </li>
+                <li>
+                    <label for="site">사이트 주소 입력</label>
+                    <input type="url" id="site" placeholder="www.abc.com" />
+                </li>
+                <li>
+                    <label for="userMail"">메일주소</label>
+                    <input type="email" id="userMail" placeholder="example@domain.com" required autocomplete="off" />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>결제방법</legend>
+                <ol>
+                    <li>
+                        <label for="cardtype" list="card">카드선택</label>
+                        <input type="text" name="" id="cardtype" list="card" />
+                        <datalist id="card">
+                            <option value="비씨카드" label="비씨카드"></option>
+                            <option value="국민카드" label="국민카드"></option>
+                            <option value="하나카드" label="하나카드"></option>
+                        </datalist>
+                    </li>
+                    <li>
+                        <label for="expired">유효기간 datetime-local</label>
+                        <input type="datetime-local" name="" id="expired" /><br />
+                        <label for="expired2">유효기간 date</label>
+                        <input type="date" name="" id="expired2" /><br />
+                        <label for="expired3">유효기간 month</label>
+                        <input type="month" name="" id="expired3" /><br />
+                        <label for="expired4">유효기간 week</label>
+                        <input type="week" name="" id="expired4" /><br />
+                        <label for="expired5">유효기간 time</label>
+                        <input type="time" name="" id="expired5" /><br />
+                        <!-- 날짜 필드 : date, month, week, time, datetime-local -->
+                    </li>
+                </ol>
+        </fieldset>
+        <fieldset>
+            <legend>추가선택사항</legend>
+            <ol>
+                <li>
+                    <label for="color">색상 선택</label>
+                    <input type="color" id="color" />
+                </li>
+                <li>
+                    <label for="slide">추가 수량 선택</label>
+                    <input type="range" id="slide" min="1" max="10" value="1" step="2" />
+                </li>
+                <li>
+                    <label for="photo">사진 선택</label>
+                    <input type="file" id="photo" multiple />
+                </li>
+            </ol>
+        </fieldset>
+        <p>
+            <input type="submit" formmethod="POST" formaction="/buy" value="주문하기" />
+            <input type="reset" value="취소하기" />
+        </p>
+    </form>
+</body>
+</html>
