@@ -9,9 +9,9 @@
     <!-- 스킵네비 -->
     <div id="skipNav">
         <ul>
-            <li><a href="#">주메뉴 바로가기</a></li>
-            <li><a href="#">본문 바로가기</a></li>
-            <li><a href="#">하단메뉴 바로가기</a></li>
+            <li><a href="#mainMenu">주메뉴 바로가기</a></li>
+            <li><a href="#content">본문 바로가기</a></li>
+            <li><a href="#footer">하단메뉴 바로가기</a></li>
         </ul>
     </div>
     <!-- //스킵네비 -->
@@ -21,22 +21,26 @@
     <div id="wrap">
         <!-- 헤더 -->
         <div id="header">
-            <h1><a href="#"><img src="images/logo.gif" alt="NAYANA BUSINESS" /></a></h1>
-            <dl>
-                <dt><a href="#">탑메뉴</a></dt>
-                <dd><a href="#"><img src="images/t_m_home.gif" alt="HOME" /></a></dd>
-                <dd><a href="#"><img src="images/t_m_login.gif" alt="LOGIN" /></a></dd>
-                <dd><a href="#"><img src="images/t_m_join.gif" alt="JOIN" /></a></dd>
-                <dd><a href="#"><img src="images/t_m_sitemap.gif" alt="SITEMAP" /></a></dd>
-            </dl>
-            <h2>주메뉴</h2>
-            <ul>
-                <li><a href="#"> <img src="images/menu_01.gif" alt="회사소개" /></a></li>
-                <li><a href="#"> <img src="images/menu_02.gif" alt="사업분야" /></a></li>
-                <li><a href="#"> <img src="images/menu_03.gif" alt="제품안내" /></a></li>
-                <li><a href="#"> <img src="images/menu_04.gif" alt="채용정보" /></a></li>
-                <li><a href="#"> <img src="images/menu_05.gif" alt="고객지원" /></a></li>
-            </ul>
+            <div id="topMenu">
+                <h1><a href="#"><img src="images/logo.gif" alt="NAYANA BUSINESS" /></a></h1>
+                <dl>
+                    <dt><a href="#">탑메뉴</a></dt>
+                    <dd><a href="#"><img src="images/t_m_home.gif" alt="HOME" /></a></dd>
+                    <dd><a href="#"><img src="images/t_m_login.gif" alt="LOGIN" /></a></dd>
+                    <dd><a href="#"><img src="images/t_m_join.gif" alt="JOIN" /></a></dd>
+                    <dd><a href="#"><img src="images/t_m_sitemap.gif" alt="SITEMAP" /></a></dd>
+                </dl>
+            </div>
+            <div id="mainMenu">
+                <h2>주메뉴</h2>
+                <ul>
+                    <li><a href="#"> <img src="images/menu_01.gif" alt="회사소개" /></a></li>
+                    <li><a href="#"> <img src="images/menu_02.gif" alt="사업분야" /></a></li>
+                    <li><a href="#"> <img src="images/menu_03.gif" alt="제품안내" /></a></li>
+                    <li><a href="#"> <img src="images/menu_04.gif" alt="채용정보" /></a></li>
+                    <li><a href="#"> <img src="images/menu_05.gif" alt="고객지원" /></a></li>
+                </ul>
+            </div>
         </div>
         <!-- //헤더 -->
         <hr />
@@ -44,33 +48,37 @@
         <!-- 컨테이너 -->
         <div id="container">
             <!-- 메인비주얼 -->
-            <div class="m_vis">
+            <div id="m_vis">
                 <img src="images/img_main.jpg" alt="고객과 함께 성장해온 1등 기업 나야존 업계 최고의 리더가 되는 기업이 되도록 노력하겠습니다." />
             </div>
             <!-- //메인비주얼 -->
-            <!-- 메인타이틀 -->
-            <div class="m_tit">
-                <h3><a href="#"><img src="images/m_tit_biz.gif" alt="BUSINESS INFO" /></a></h3>
-                <p><a href="#"><img src="images/biz_img.gif" alt="각종 호스팅, 도메인, 홈페이지제작 등 토탈 솔루션 개발 업체로서 양질의 컨텐츠를 제공하여 더욱더 편리한 세상을 만들겠습니다." /></a></p>
-                
-                <p><a href="#"><img src="images/btn_view.gif" alt="자세히보기" /></a></p>
-                <h3><a href="#"><img src="images/m_tit_notice.gif" alt="NOTICE & NEWS" /></a></h3>
-                <ul>
-                    <li><a href="#">notice1<span>2011-02-21</span></a></li>
-                    <li><a href="#">notice2<span>2011-02-20</span></a></li>
-                    <li><a href="#">notice3<span>2011-02-19</span></a></li>
-                    <li><a href="#">notice4<span>2011-02-18</span></a></li>
-                </ul>
-                <p><a href="#"><img src="images/more.gif" alt="MORE" /></a></p>
-                
-                <h3><a href="#"><img src="images/m_tit_quick.gif" alt="QUICK MENU" /></a></h3>
-                <ul>
-                    <li><a href="#"><img src="images/q_m1.gif" alt="상담문의게시판" /></a></li>
-                    <li><a href="#"><img src="images/q_m2.gif" alt="채용정보" /></a></li>
-                    <li><a href="#"><img src="images/q_m3.gif" alt="찾아오시는길" /></a></li>
-                </ul>
+            <!-- 메인컨텐츠 -->
+            <div id="content">
+                <div id="bizInfo">
+                    <h3><a href="#"><img src="images/m_tit_biz.gif" alt="BUSINESS INFO" /></a></h3>
+                    <p><a href="#"><img src="images/biz_img.gif" alt="각종 호스팅, 도메인, 홈페이지제작 등 토탈 솔루션 개발 업체로서 양질의 컨텐츠를 제공하여 더욱더 편리한 세상을 만들겠습니다." /></a></p>
+                    <p><a href="#"><img src="images/btn_view.gif" alt="자세히보기" /></a></p>
+                </div>
+                <div id="noticeNews">
+                    <h3><a href="#"><img src="images/m_tit_notice.gif" alt="NOTICE & NEWS" /></a></h3>
+                    <ul>
+                        <li><a href="#">notice1</a><span>2011-02-21</span></li>
+                        <li><a href="#">notice2</a><span>2011-02-20</span></li>
+                        <li><a href="#">notice3</a><span>2011-02-19</span></li>
+                        <li><a href="#">notice4</a><span>2011-02-18</span></li>
+                    </ul>
+                    <p><a href="#"><img src="images/more.gif" alt="MORE" /></a></p>
+                </div>
+                <div id="quickmenu">
+                    <h3><a href="#"><img src="images/m_tit_quick.gif" alt="QUICK MENU" /></a></h3>
+                    <ul>
+                        <li><a href="#"><img src="images/q_m1.gif" alt="상담문의게시판" /></a></li>
+                        <li><a href="#"><img src="images/q_m2.gif" alt="채용정보" /></a></li>
+                        <li><a href="#"><img src="images/q_m3.gif" alt="찾아오시는길" /></a></li>
+                    </ul>
+                </div>
           </div>
-            <!-- //메인타이틀 -->
+            <!-- //메인컨텐츠 -->
             
             
         </div>
