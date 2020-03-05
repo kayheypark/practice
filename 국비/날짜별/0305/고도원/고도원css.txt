@@ -1,0 +1,13 @@
+.txt1 굵게, 글자크기30px, 돋움, red
+.txt1{font-weight:bold;font-size:30px;}
+
+.txt2 굵게, 글자크기25px, 줄간격1.2 , 굴림, lime색 (font:속성이용해서),들어쓰기50px
+.txt3 굵게, 글자크기20px, 줄간격1.2,Gulim굴림,blue,들여쓰기50px
+.txt3_1 글자크기30px, HY견고딕,취소선,olive색
+.txt4 글씨색red(색상코드),가운데정렬
+.txt5 글씨크기20px, 궁서 (font: 속성 이용해서)
+.txt6_1 글씨크기25px, red
+.txt7 기울임, 글씨크기20px, 바탕체,굵게,줄간격1.2
+.txt8 글씨크기20px, 돋움, 밑줄, lime색
+.txt9 글씨크기20px, HY견고딕, 밑줄, #f0f 색상
+.txt10 굵게, 기울임,작은대문자,red,글자크기15px,줄간격1.5, 돋움, 밑줄,오른쪽정렬
