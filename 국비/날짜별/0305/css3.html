@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하위 선택자</title>
+    <style>
+        div p {color: red;}
+        .txt p {color: green;} /*우선수위 10 + 1 = 11점*/
+        div div p {color: blue;} /*우선수위 1 + 1 + 1 = 3점*/
+    </style>
+</head>
+<body>
+    <h1>하위 선택자</h1>
+    <p>하위 선택자에 대해 알아봅시다.</p>
+    <div>
+        <p>2선택자와 선택자는 서로 조합 가능</p>
+        <div class="txt">
+            <p>3이때 하위 선택자 방식을 이용할 경우 특정 선택자 안에 포함된 하위 요소들을 선택하여 스타일 지정 가능.</p>
+        </div>
+    </div>
+</body>
+</html>
