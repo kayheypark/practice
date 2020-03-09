@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스</title>
+    <style type="text/css">
+    li a {text-decoration: none; color: #000;}
+    li a:hover {text-decoration: underline; color: #f00;}
+    /* 가상클래스 a:link , a:visited , a:hover , a:active , a:focus 순서중요 우선순위 : 10점 */
+    .a1 a:link {color: yellow;}
+    .a1 a:visited {color: green;}
+    .a1 a:hover {background-color: aqua;}
+    .a1 a:active {font-size: 30px;}
+    .a1 a:focus {font-style: italic;}
+    </style>
+</head>
+<body>
+    <ol>
+        <li class="a1"><a href="#">menu</a></li>
+        <li class="a2"><a href="http://www.naver.com" target="_blank" title="새창">menu</a></li>
+        <li class="a3"><a href="#">menu</a></li>
+        <li class="a4"><a href="http://www.naver.com" target="_blank" title="새창">menu</a></li>
+    </ol>
+</body>
+</html>

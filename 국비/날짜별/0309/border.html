@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style type="text/css">
+        h1 {
+            width: 500px;
+            height: 100px;
+            background-color: yellow;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+
+        h2 {
+            width: 500px;
+            height: 100px;
+            background-color: aqua;
+            border: 10px solid red;
+        }
+
+        h3 {
+            width: 500px;
+            height: 100px;
+            background-color: grey;
+            /* border-top-width: 10px;
+            border-top-style: solid;
+            border-top-color: red; */
+            border : 10px solid red;
+            border-right:  10px dotted blue;
+            border-bottom: 10px dashed green;
+            border-left: 10px double #000;
+        }
+        p { width: 500px; height: 100px; background-color: grey; font-size: 30px; border-width: 10px; border-color: #000;}
+        .none {border-style: none;}
+        .hidden {border-style: hidden;}
+        .groove {border-style: groove;}
+        .ridge {border-style: ridge;}
+        .inset {border-style: inset;}
+        .outset {border-style: outset;}
+    </style>
+</head>
+<body>
+    <h1> 보더 border 선, 테두리 </h1>
+    <h2> 보더 border 선, 테두리 </h2>
+    <h3> 보더 border 선, 테두리 </h3>
+    <p class="hidden">border-style : hidden</p>
+    <p class="groove">border-style : groove</p>
+    <p class="ridge">border-style : ridge</p>
+    <p class="inset">border-style : inset</p>
+    <p class="outset">border-style : outset</p>
+</body>
+</html>

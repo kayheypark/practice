@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link</title>
+    <style type="text/css">
+    body {text-align: center;}
+    ul {list-style: none;}
+    li {display: inline;}
+    li a {color: #000; font-size: 12px;}
+    /* 블록레벨요소를 인라인요소로 바꿈 */
+    #over a {text-decoration: none;}
+    #over a:hover {color: #0f0;}
+    #over1 a {text-decoration: none;}
+    #over1 a:hover {color: #0f0; text-decoration: underline;}
+    #over2 a {text-decoration: none; color: blue;}
+    #over2 a:hover {color: #fff; background-color: #00f; text-decoration: underline; padding: 10px; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1>변화가 없는 형태의 하이퍼 링크</h1>
+    <ul>
+        <li><a href="#">처음으로</a>&nbsp;</li>
+        <li><a href="#">메뉴1</a>&nbsp;</li>
+        <li><a href="#">메뉴2</a>&nbsp;</li>
+        <li><a href="#">메뉴3</a>&nbsp;</li>
+        <li><a href="#">메뉴4</a>&nbsp;</li>
+    </ul>
+    <hr />
+    <h1>롤오버가 있는 형태의 하이퍼링크</h1>
+    <ul id="over">
+        <li><a href="#">처음으로</a>&nbsp;</li>
+        <li><a href="#">메뉴1</a>&nbsp;</li>
+        <li><a href="#">메뉴2</a>&nbsp;</li>
+        <li><a href="#">메뉴3</a>&nbsp;</li>
+        <li><a href="#">메뉴4</a>&nbsp;</li>
+    </ul>
+    <hr />
+    <h1>롤오버가 있는 형태의 하이퍼링크1</h1>
+    <ul id="over1">
+        <li><a href="#">처음으로</a>&nbsp;</li>
+        <li><a href="#">메뉴1</a>&nbsp;</li>
+        <li><a href="#">메뉴2</a>&nbsp;</li>
+        <li><a href="#">메뉴3</a>&nbsp;</li>
+        <li><a href="#">메뉴4</a>&nbsp;</li>
+    </ul>
+    <hr />
+    <h1>롤오버가 있는 형태의 하이퍼링크2</h1>
+    <ul id="over2">
+        <li><a href="#">처음으로</a>&nbsp;</li>
+        <li><a href="#">메뉴1</a>&nbsp;</li>
+        <li><a href="#">메뉴2</a>&nbsp;</li>
+        <li><a href="#">메뉴3</a>&nbsp;</li>
+        <li><a href="#">메뉴4</a>&nbsp;</li>
+    </ul>
+    <hr />
+</body>
+</html>
