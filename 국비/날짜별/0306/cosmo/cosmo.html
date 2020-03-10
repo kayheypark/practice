@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CosmoFarmer</title>
     <style type="text/css">
+    body, div, h1, h2, p, address  {margin: 0; padding: 0;}
+    #wrap {width: 908px;margin: 20px auto;}
+
+
         body {
             background: #ffffcb url(images/dream.jpg) no-repeat 100% 100% fixed;
             font-family: "Times New roman", serif;
@@ -20,18 +24,24 @@
             border-top: 3px solid red;
             border-bottom: 3px solid red;
             line-height: 50px;
+            padding: 10px;
         }
 
         #content h2 {
             background: orange;
             border-bottom: 3px solid red;
+            margin: 10px 0;
         }
 
         #content p {
             text-align: justify;
+            margin: 10px 0;
         }
 
+        /* 마진겹치면 하나로 퉁침 */
+
         #footer {
+            padding-top: 10px;
             border-top: 3px solid red;
         }
 
