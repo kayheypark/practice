@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 박스모델 </title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 전체 선택자 : * 애스터리스크aserisk, 우선순위 0점 */
+        body {
+            font-size: 30px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* 박스모델 실제크기 : 가400px 세400px 
+    내용물width + 안쪽여백padding + 테두리선border + 바깥쪽여백margin */
+        #wrap {
+            width: 360px;
+            height: 360px;
+            background-color: gray;
+            padding: 20px;
+        }
+
+        #top {
+            width: 310px;
+            height: 120px;
+            background-color: red;
+            border: 5px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        #bottom {
+            width: 310px;
+            height: 120px;
+            background-color: blue;
+            border: 5px solid #000;
+            padding: 20px;
+        }
+
+/*
+
+padding: 20px;              top,right,bottom,left
+padding: 20px 10px;         topbottom,rightleft
+padding: 20px 10px 5px;     top,right left,bottom
+padding: 20px 10px 5px 0;   top,right,bottom,left
+
+ */
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="top">Top</div>
+        <div id="bottom">
+            BottomBottomBottom<br />
+            BottomBottom<br />
+            BottomBottom<br />
+        </div>
+    </div>
+</body>
+
+</html>
