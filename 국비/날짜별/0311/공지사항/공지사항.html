@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <style type="text/css">
+
+    /* common */
+    body, div, h3, ul, li, p {margin: 0; padding: 0;}
+    body {font-size: 12px; font-family: Dotum, "돋움", sans-serif;}
+    ul, li {list-style: none;}
+    img {border: none;} /* IE8 보더생김 */
+    a:link, a:visited {text-decoration: none;}
+    a:hover, a:active, a:focus {text-decoration: underline;}
+
+    /* 공지사항 */
+    .tab { position: relative; width: 306px; margin: 0 auto;border: 1px solid red;}
+    .tab h3 { height: 23px; background: url(images/tab_bg.gif) no-repeat 0 0; padding-left: 15px; padding-top: 8px;
+                margin-bottom: 9px;}
+    .tab li {background: url(images/news_list.gif) no-repeat 6px 50%; margin-bottom: 6px;
+    
+     /* text-indent: 15px; */
+     padding-left: 15px;
+     }
+    .tab .more {position: absolute; top: 10px; right: 10px;}
+    span {position: absolute; right: 10px;}
+
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <h3>공지사항</h3>
+        <ul>
+        <li><a href="#">제 11년 웹접근성 품질마크 ...</a> <span>2010-12-30</span></li>
+        <li><a href="#">제 11년 웹접근성 품질마크 ...</a> <span>2010-12-30</span></li>
+        <li><a href="#">제 11년 웹접근성 품질마크 ...</a> <span>2010-12-30</span></li>
+        <li><a href="#">제 11년 웹접근성 품질마크 ...</a> <span>2010-12-30</span></li>
+        </ul>
+        <p class="more"><a href="#"><img src="images/more.gif" alt="공지사항 목록 더보기"></a></p>
+    </div>
+</body>
+</html>
