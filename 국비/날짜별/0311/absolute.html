@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position:absolute</title>
+    <style type="text/css">
+
+    * {margin: 0;padding: 0;}
+    #outer { z-index: 150; position: relative; width: 600px; border: 5px solid red;}
+    .box {width: 100px; height: 100px; border: 5px solid #000;}
+    #box1 { z-index: 3; position: absolute; left: 0; top: 0; background: red;}
+    #box2 { z-index: 2; position: absolute; left: 40px; top: 40px; background: orange;}
+    #box3 { z-index: 1; position: absolute; left: 80px; top: 80px; background: yellow;}
+    #side { z-index: 100; position: absolute; left: 100px; top: 100px; background: green;}
+
+/*
+
+position : absolute (절대위치)
+            relative(상대위치)
+            fixed(고정위치)
+            
+오프셋 속성 값 : left, top, right, bottom
+레이어 순서바꿈 : z-index, 큰 숫자가 맨 위로 옴            
+
+ */
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+    </div>
+    <div class="box" id="side">sidebox</div>
+</body>
+</html>
