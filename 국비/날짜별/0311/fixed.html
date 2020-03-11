@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position:fixed</title>
+    <style type="text/css">
+    h1 {background: silver; color: #fff;}
+    p {background: yellow; padding: 10px;}
+    h2 {height: 2000px;}
+    
+    .fix {
+        position: fixed; left: 0; top: 0;
+        width: 100%; height: 100px; margin: 0; background: aqua;}
+
+        /* position:fixed; 의 특징
+        스크린을 기준으로 고정위치, 레이어개념 본문위에 위치, 주변에 영향을 줌 */
+    </style>
+</head>
+<body>
+    <h1>Fixed Position</h1>
+    <p class="fix">fixed position 박스의 배치 기준은 스크린이다.</p>
+    <p>박스의 위치를 지정할 때 사용할 수 있는 오프셋 속성으로는 top, left, right, bottom이 있다. 스크롤</p>
+    <p>인터넷 익스플로러6 버전에선 안된다.</p>
+</body>
+</html>
