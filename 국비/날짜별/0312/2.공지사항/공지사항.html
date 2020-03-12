@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+
+    <style type="text/css">
+    /* 초기화 */
+        ul, li, h3, h4, p {margin: 0;padding: 0;}
+        body {font-size: 12px; font-family: Dotum, "돋움", sans-serif;}
+        ul, li {list-style-type: none;}
+        a {color: gray;text-decoration: none;}
+        a:hover {color: red;text-decoration: underline;}
+        img {border: none;}
+
+        /* 전체레이아웃 */
+        .board_view {width: 550px;  margin: 20px auto; background-color: yellow;}
+        .board_view li {background: url(images/blet_dot.gif) no-repeat 0 50%; text-indent: 10px; line-height: 20px;}
+
+        /* 공지사항 */
+        .notice { width: 550px; background-color: aqua;}
+        .notice h3 {float: left; width: 145px;}
+        .notice ul{float: right; width: 350px;}
+
+        .broadcast {clear: both; width: 526px;  padding: 10px; border: 2px solid #ddd; background-color: orange;}
+        .broadcast h3 {border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 10px;}
+        
+        /* 높이유지 */
+        .notice:after {content: ""; display: block; clear: both;}
+        .broadcast:after {content: ""; display: block; clear: both;}
+        
+        .report {position: relative;}
+        .explain {position: relative;}
+
+        .broadcast .report {float: left; width: 240px;}
+        .broadcast .explain {float: right; width: 240px;}
+        .broadcast .more {position: absolute; top: 0; right: 0;}
+
+        /*
+        
+        자식이 플로트 됐을 때 부모 쪼그라듦 그때 부모 높이 유지하는 방법
+        1. height 지정
+        2. overflow:auto, overlow:hidden
+        3. float
+        4. 공갈div 사용
+        5. :after {content:""; display: block; clear:both;}
+
+         */
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="board_view">
+
+        <div class="notice">
+            <h3><img src="images/notice.gif" alt="공지사항"></h3>
+            <ul>
+                <li>
+                    <a href="#">[안내] 장애인 도서관 서비스 통신요금 바우처제도 참여...</a>
+                </li>
+                <li>
+                    <a href="#">[안내] '제5회 부산 장애인 미디어 축제' 화면해설...</a>
+                </li>
+                <li>
+                    <a href="#">[안내] 2010년 보조기기 시연회 안내</a>
+                </li>
+                <li>
+                    <a href="#">[안내] 제3회 전국 시각장애인 어울림 걷기대회...</a>
+                </li>
+                <li>
+                    <a href="#">[안내] 2010년 장애인 정보통신 보조기기 신청...</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">[안내] 장애인 도서관 서비스 통신요금 바우처제도 참여...</a>
+                </li>
+                <li>
+                    <a href="#">[안내] '제5회 부산 장애인 미디어 축제' 화면해설...</a>
+                </li>
+                <li>
+                    <a href="#">[안내] 2010년 보조기기 시연회 안내</a>
+                </li>
+                <li>
+                    <a href="#">[안내] 제3회 전국 시각장애인 어울림 걷기대회...</a>
+                </li>
+                <li>
+                    <a href="#">[안내] 2010년 장애인 정보통신 보조기기 신청...</a>
+                </li>
+            </ul>
+            <!-- <div class="clear"></div> -->
+        </div>
+        <div class="broadcast">
+
+            <div class="report">
+                <h3><img src="images/title_1.gif" alt="보도자료및성명서"></h3>
+                <ul>
+
+                    <li>
+                        <a href="#">[보도자료] 장애인과 비장애인이...</a>
+                    </li>
+                    <li>
+                        <a href="#">[성명서] 한국장애인고용공단은 장...</a>
+                    </li>
+                    <li>
+                        <a href="#">[성명서] 장애인고용공단 양경자...</a>
+                    </li>
+                    <li>
+                        <a href="#">[보도자료] 한국시각장애인스포츠연...</a>
+                    </li>
+                    <li>
+                        <a href="#">[보도자료] 시작장애인 엄마, 자...</a>
+                    </li>
+
+                </ul>
+                <p class="more"> <a href="#"> <img src="images/all.gif" alt="보도자료및성명서 더보기"> </a> </p>
+
+            </div>
+            <div class="explain">
+                <h3><img src="images/title_2.gif" alt="화면해설방송"></h3>
+                <ul>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#">[편성표] 6월 5주 화면해설방송 안...</a>
+                    </li>
+                    <li>
+                        <a href="#">[편성표] 6월 4주 화면해설방송 안...</a>
+                    </li>
+                    <li>
+                        <a href="#">[편성표] 화면해설방송 안내 6월 14...</a>
+                    </li>
+                    <li>
+                        <a href="#">[편성표] 6월 2주 화면해설방송 안...</a>
+                    </li>
+                    <li>
+                        <a href="#">[편성표] 6월 1주 화면해설방송 안...</a>
+                    </li>
+
+
+                </ul>
+                <p class="more"> <a href="#"> <img src="images/all.gif" alt="화면해설방송 더보기"> </a> </p>
+
+            </div>
+            <!-- <div class="clear"></div> -->
+
+        </div>
+
+    </div>
+</body>
+
+</html>
