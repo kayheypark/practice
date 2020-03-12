@@ -1,0 +1,11 @@
+.board_view
+    h3.title
+    p.subs
+    .news
+        p
+        ul
+    .menu_list
+        .economy
+        .culture
+        .welfare
+  
