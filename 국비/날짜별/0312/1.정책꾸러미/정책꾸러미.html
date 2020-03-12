@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. 정책꾸러미</title>
+    <style type="text/css">
+
+    /* 초기화, 문단 */
+    body {font-family: Dotum, "돋움", sans-serif; font-size: 13px;}
+    div, p ,ul, li h3, h4 {margin: 0; padding: 0;}
+    li {list-style: none; background:  url(images/cast_list.gif) no-repeat 0 50%; text-indent: 10px;}
+    .cast_txt {line-height: 1.5;}
+    a {text-decoration: none; color: black;}
+    a:hover {text-decoration: underline; color: blue;}
+
+    /* 레이아웃 */
+    div {position: relative;}
+    .cast { height: 170px; width: 490px; border: 1px solid gray; margin: 0 auto; }
+    .cast_img img { float: left; margin-left: 10px; margin-top: -5px;  border: 1px solid red;}
+    .cast_txt { float: right; margin-right: 10px; margin-top: -5px; width: 310px; border: 1px solid red;}
+    .more {position: absolute; top: 10px; right: 10px;}
+    h3 img {margin-bottom: 5px; margin-top: -5px; margin-left: 5px;}
+    h3 {border-bottom: 1px solid gray;}
+
+    </style>
+</head>
+<body>
+    <div class="cast">
+        <h3><img src="images/cast_title.gif" alt="정책꾸러미"></h3>
+        <p class="cast_img"><img src="images/cast_img.gif" alt="아이들 이미지"></p>
+        <div class="cast_txt">
+            <h4>우측통행실시</h4>
+            <ul>
+                <li><a href="#">우측보행, 7월1일부터 본격 시행</a></li>
+                <li><a href="#">안전한 보행방법 우측통행 홍보 동영상</a></li>
+                <li><a href="#">우측보행이 교통안전, 보행효율면에..</a></li>
+                <li><a href="#">시범시행 주인 "우측보행 " 호응도...</a></li>
+            </ul>
+        </div>
+        <p class="more" title="우측통행실시 더보기">더보기</p>        
+    </div>
+</body>
+</html>
