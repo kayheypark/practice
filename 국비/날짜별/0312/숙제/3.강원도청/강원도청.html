@@ -10,10 +10,21 @@
     a {color: black; text-decoration: none;}
     a:hover {color: red; text-decoration: underline;}
     h1, h2, ul, li, p {margin: 0; padding: 0;}
+    ul, li {list-style: none;}
 
-    .wrap {margin: 0 auto;}
-    .thumbnail {float: left;}
-    .thumbnail {float: left;}
+.wrap {position: relative; border: 1px solid black;}
+.thumnbnail {float: left;}
+.content {float: right;}
+.down {clear: both;}
+.subscribe {position: absolute; top: 0; right: 0;}
+
+.col1 {float: left;}
+.col2 {float: left;}
+.col3 {clear: both;}
+
+
+
+
 
 
     </style>
@@ -21,13 +32,13 @@
 </head>
 <body>
 <div class="wrap">
+    <div class="up">
     <h1><a href="#"><img src="images/txt_together.gif" alt="함께해요! 강원도 세상"></a></h1>
     
-    <div class="up">
 
         <div class="thumnbnail">
             <a href="#"><img src="images/thumimage.jpg" alt="강원도지사 사진" /></a>
-            <p>"강원도의 운명을 바꿉시다"...</p>
+            <p> <a href="#"> "강원도의 운명을 바꿉시다"...</a></p>
         </div>
 
         <div class="content">
