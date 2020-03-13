@@ -6,24 +6,25 @@
     <title>강원도청</title>
 
     <style type="text/css">
+    h3, h4, ul, li, p {margin: 0; padding: 0;}
     body {font-size: 12px; font-family: Dotum, "돋움", sans-serif;}
     a {color: black; text-decoration: none;}
     a:hover {color: red; text-decoration: underline;}
-    h3, h4, ul, li, p {margin: 0; padding: 0;}
     li {list-style: none; background: url(images/blet_dot.gif) no-repeat 0 50%; text-indent: 10px; line-height: 1.5;}
     ul {padding: 5px; }
     .up ul {padding: 5px; width: 300px;}
 
 .wrap .up{position: relative;}
-.up {width: 420px;}
+.up {width: 430px;}
 .thumnbnail {float: left; width: 100px; text-align: center;}
 .news {float: right;}
-.menu_list {clear: both;}
+.news:after {content: "",display: block,clear: both;}
+.menu_list {clear: both; width: 430px;}
 p.subs {position: absolute; top: 0; right: 0;}
 
 .economy {float: left;}
-.culture {float: left; margin-left: 5px;}
-.welfare {float: left; margin-left: 5px;}
+.culture {float: left; margin-left: 10px;}
+.welfare {float: right;}
 
 
 
