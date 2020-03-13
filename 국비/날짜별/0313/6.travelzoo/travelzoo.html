@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelZoo</title>
+
+<style type="text/css">
+/* 초기화(패딩) */
+h1,h2,h3,h4,h5,li,ul,dl,div,p,fieldset,label,input,img{margin: 0;padding: 0;}
+ul,li,dl{list-style: none;}
+
+/*초기화(글꼴)*/
+body {font-size: 12px; font-family: Dotum,"돋움",sans-serif;}
+
+a {text-decoration: none; color: rgb(59, 117, 226);}
+a:hover {text-decoration: underline; color: blue;}
+
+/* IE8.0 */
+img{border: none;}
+
+/* 스킵네비 */
+#skip {position: relative;}
+#skip a {position: absolute; left: 0px; top: -35px; border: 1px solid #fff; color: #fff; background: #333; line-height:
+30px; width: 200px; text-align: center;}
+#skip a:active,
+#skip a:focus {top: 0;}
+
+/* 가운데정렬 */
+#wrap {width: 900px; margin: 0 auto;}
+
+/* 헤더 */
+#header  {border-bottom: 3px solid skyblue;}
+#header p {margin:10px 0;}
+
+/* 컨테이너 */
+#container {}
+#container h2 {padding: 10px 0;}
+#container fieldset {margin: -5px 0 15px 0; border: 1px solid #888; background-color: #ddd;}
+#container fieldset legend {text-indent: -9999px; overflow: hidden;}
+#container fieldset p {float: left;}
+#container fieldset label {padding:  0 5px;}
+
+/* 칼럼 */
+.contury {width: 900px;}
+.col1 {width: 300px; float: left;}
+
+.col1 h3,
+.col2 h3,
+.col3 h3,
+.col4 h3 {border-bottom: 1px solid #888; padding-bottom: 5px; margin-bottom: 5px;}
+
+.col1 dl,
+.col2 dl,
+.col3 dl,
+.col4 dl {position: relative;}
+
+.col1 dt,
+.col2 dt,
+.col3 dt,
+.col4 dt {position: absolute; top: 2px; right: 40px;}
+
+
+.col1 dd:last-child,
+.col2 dd:last-child,
+.col3 dd:last-child,
+.col4 dd:last-child{position: absolute; top: 15px; right: 40px;}
+
+.col2 {width: 300px; float: left;}
+.col3 {width: 300px; float: left;}
+.col4 {width: 300px;}
+
+/* 푸터 */
+#footer {background-color: #ddd;}
+
+
+</style>
+
+</head>
+<body>
+    <div id="skip">
+        <ul>
+            <li><a href="#header">헤더 바로가기</a></li>
+            <li><a href="#container">본문 바로가기</a></li>
+            <li><a href="#footer">하단메뉴 바로가기</a></li>
+        </ul>
+    </div>
+    <!-- //skipNav -->
+    <div id="wrap">
+        <div id="header">
+            <h1><a href="#"><img src="images/logo.gif" alt="travel zoo logo"></a></h1>
+            <p>The Deal Experts. Over 21 million Subscribers Worldwide. </p>
+        </div>
+        <!-- //header -->
+        <div id="container">
+            <h2>Select Your Site</h2>
+            <fieldset>
+                <legend>동의서</legend>
+                <p><input type="checkbox" id="agree"></p>
+                <label for="agree">Make this selection my default Travelzoo site and skip this page in the future</label>
+            </fieldset>
+                <div class="contury">
+                    <div class="col1">
+                        <h3>Asia Pacific</h3>
+                        <p></p>
+
+                        <dl>
+                            <dt>Australia</dt>
+                            <dd><a href="#"><img src="images/a.jpg" alt="Australia"></a></dd>
+                            <dd> <a href="#">www.travelzoo.com.au</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>中国</dt>
+                            <dd><a href="#"><img src="images/ca.jpg" alt="china"></a></dd>
+                            <dd> <a href="#">cn.travelzoo.com</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>香港特區</dt>
+                            <dd><a href="#"><img src="images/hong.jpg" alt="Hong Kong SAR"></a></dd>
+                            <dd> <a href="#">www.travelzoo.com.hk</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>日本</dt>
+                            <dd><a href="#"><img src="images/j.jpg" alt="Japan"></a></dd>
+                            <dd> <a href="#">www.travelzoo.co.jp</a></dd>
+                        </dl>
+                    </div>
+                    <!-- //col1 -->
+                    <div class="col2">
+                        <h3>Americas</h3>
+                        <p></p>
+
+                        <dl>
+                            <dt>Canada</dt>
+                            <dd><a href="#"><img src="images/canada.jpg" alt="canada"></a></dd>
+                            <dd> <a href="#">www.travelzoo.ca</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>U.S.A.</dt>
+                            <dd><a href="#"><img src="images/usa.jpg" alt="usa"></a></dd>
+                            <dd> <a href="#">www.travelzoo.com</a></dd>
+                        </dl>
+                    </div>
+                    <!-- //col2 -->
+                    <div class="col3">
+                        <h3>Europe</h3>
+                        <p></p>
+
+                        <dl>
+                            <dt>Deutschland</dt>
+                            <dd><a href="#"><img src="images/germany.jpg" alt="Deutschland"></a></dd>
+                            <dd> <a href="#">www.travelzoo.de</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>España</dt>
+                            <dd><a href="#"><img src="images/spain.jpg" alt="spain"></a></dd>
+                            <dd> <a href="#">www.travelzoo.es</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>France</dt>
+                            <dd><a href="#"><img src="images/fanace.jpg" alt="france"></a></dd>
+                            <dd> <a href="#">www.travelzoo.fr</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>United Kingdom</dt>
+                            <dd><a href="#"><img src="images/unitied.jpg" alt="unitied"></a></dd>
+                            <dd> <a href="#">www.travelzoo.co.uk</a></dd>
+                        </dl>
+                    </div>
+                    <!-- //col3 -->
+                    <div class="col4">
+                        <h3>Other Site</h3>
+                        <p></p>
+
+                        <dl>
+                            <dt>台灣</dt>
+                            <dd> <a href="#">www.travelzoo.com.tw</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>Asia in English</dt>
+                            <dd> <a href="#">www.travelzoo.com/ap</a></dd>
+                        </dl>
+                    </div>
+                    <!-- //col4 -->
+            </div>
+            <!-- //contury -->
+        </div>
+        <!-- //container -->
+        <div id="footer">
+            <strong>Follow Us:</strong>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li> <a href="#"> Twitter</a></li>
+                <li> <a href="#"> Privacy Policy</a></li>
+                <li> <a href="#"> Disclaimer</a></li>
+
+            </ul>
+            <address>©2011 Travelzoo Inc. - All Rights Reserved. </address>
+            <p><img src="images/logo_fly_footer_compact.gif" alt="푸터 로고"></p>
+            <p>Find <span>cheap flights</span></p>
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
