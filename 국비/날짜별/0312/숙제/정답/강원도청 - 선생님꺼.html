@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title> 3.강원도청</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<style type="text/css">
+body,div,h3,h4,p,ul,li{margin:0;padding:0;}	
+body{font-size:12px;font-family:Dotum,"돋움",sans-serif;}
+ul,li{list-style:none;}
+img{border:none;}
+a{text-decoration:none;color:#666;}
+a:hover{color:#f00;}
+
+.board_view{width:430px;margin:20px auto;/*background:yellow;*/}
+.board_view li{background:url(images/blet_dot.gif) no-repeat 15px 50%;
+				padding-left:20px;line-height:1.5em;}
+
+h3.title{float:left;}
+p.subs{float:right;}
+
+.news{clear:both;width:430px;padding:6px 0;/*background:aqua;*/}
+.news:after{content:"";display:block;clear:both;}
+.news .imgbox{float:left;width:87px;}
+.news .imgbox span{display:block;
+					padding-top:5px;text-align:center;font-size:11px;}
+.news ul{float:right;width:330px;}
+
+.menu_list{width:430px;/*background:orange;*/}
+.menu_list:after{content:"";display:block;clear:both;}
+.menu_list .economy{float:left;margin-right:10px;}
+.menu_list .culture{float:left;}
+.menu_list .welfare{float:right;}
+
+.clear{clear:both;}
+
+/* float된 요소를 감싸고 있는 부모요소에 높이 지정 방법
+	1. height 
+	2. overflow:hidden, overflow:auto
+	3. float
+	4. 공갈div 만들어서 clear:both
+	5. :after{content:"";display:block;clear:both;}
+*/
+</style>
+</head>
+<body>
+<div class="board_view">
+	<h3 class="title"><img src="images/txt_together.gif" alt="함께해요강원도세상" /></h3>
+	<p class="subs"><img src="images/btn_together.gif" alt="강원도세상구독하기" /></p>
+	<div class="news">
+		<p class="imgbox">
+			<img src="images/thumimage.jpg" alt="강원도시장이미지" />
+			<span><a href="#">"강원도의 운명을 바꿉시다"...</a></span>
+		</p>
+		<ul>
+		<li><a href="#">POST-희망근로.하반기에 공동체 사업으로...</a></li>
+		<li><a href="#">중국 대규모 수학여행단 도내 방문시작</a></li>
+		<li><a href="#">제35대 이광재 강원도지사 취임사</a></li>
+		<li><a href="#">방방곡곡 강원 콘테스트 UCC부문 우수상</a></li>
+		</ul>
+		<!-- <div class="clear"></div>  -->
+	</div><!-- //news -->
+	<div class="menu_list">
+		<div class="economy">
+			<h4><img src="images/list1.jpg" alt="산업경제" /></h4>
+			<ul>
+			<li><a href="#">강원마트</a></li>
+			<li><a href="#">중소기업지원</a></li>
+			<li><a href="#">구인/구직</a></li>
+			<li><a href="#">소비자정보/상담</a></li>
+			</ul>
+		</div><!-- //economy -->
+		<div class="culture">
+			<h4><img src="images/list2.jpg" alt="문화관광환경" /></h4>
+			<ul>
+			<li><a href="#">동트는 강원</a></li>
+			<li><a href="#">그린투어리즘</a></li>
+			<li><a href="#">축제/행사</a></li>
+			<li><a href="#">강원관광모바일존</a></li>
+			</ul>
+		</div><!-- //culture -->
+		<div class="welfare">
+			<h4><img src="images/list3.jpg" alt="보건복지여성" /></h4>
+			<ul>
+			<li><a href="#">여성정보센터</a></li>
+			<li><a href="#">반비다복카드</a></li>
+			<li><a href="#">사회복지시설</a></li>
+			<li><a href="#">자원봉사</a></li>
+			</ul>
+		</div><!-- //welfare -->
+		<!-- <div class="clear"></div> -->
+	</div><!-- //menu_list -->
+	
+</div><!-- //board_view -->  
+</body>
+</html>
