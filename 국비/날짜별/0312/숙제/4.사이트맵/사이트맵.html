@@ -6,7 +6,7 @@
     <title>사이트맵</title>
 
     <style type="text/css">
-        body {font-size: 12px; font-family: Dotum, "돋움", sans-serif;}
+        /* body {font-size: 12px; font-family: Dotum, "돋움", sans-serif;}
         a {color: black; text-decoration: none;}
         a:hover {color: red; text-decoration: underline;}
         h2, h3, ul, li, p {margin: 0; padding: 0;}
@@ -21,14 +21,39 @@
     .title .path {position: absolute; top: 30px; right: 10px;}
     .title {border-bottom: 1px solid #ddd; padding-bottom: 10px;}
     
-    .board_customer {float: left;}
-    .board_free {float:left; margin-left: 10px;}
+    .board_customer {float: left; }
+    .board_tree {float:left; margin-left: 10px;}
     .board_notice {float: right;}
 
     /* 노란색 배경 밑으로 끌기 */
-    .site_tree:after {content: ""; display: block; clear: both;}
-    .sitemap:after {content: ""; display: block; clear: both;}
-    .sitemap:after {content: ""; display: block; clear: both;}
+    /* .site_tree:after {content: ""; display: block; clear: both;}
+    .sitemap:after {content: ""; display: block; clear: both;} */
+
+    body,div,h2,p,h3,ul,li{margin:0;padding:0;}
+body{font-size:11px;font-family:Dotum,"돋움",sans-serif;}
+ul,li{list-style:none;}
+img{border:none;}
+a{text-decoration:none;color:#666;}
+a:hover{color:#f00;}
+
+.sitemap{width:540px;margin:20px auto;border:1px solid red;}
+
+.title{width:540px;border-bottom:1px solid #ccc;padding-bottom:10px;}
+.title:after{content:"";display:block;clear:both;}
+
+.title h2{margin-bottom:10px;}
+.title p.img{float:left;}
+.title p.path{float:right;}
+
+.site_tree{width:540px;padding-top:20px;}
+.site_tree:after{content:"";display:block;clear:both;}
+.site_tree li{background:url(images/site_blet.gif) no-repeat 10px 50%;
+			padding-left:30px;line-height:25px;border-bottom:1px solid #ccc;}
+
+.site_tree .board_customer{float:left;width:173px;margin-right:10px;}
+.site_tree .board_free{float:left;width:173px;}
+.site_tree .board_notice{float:right;width:173px;}
+
         </style>
 
 </head>
