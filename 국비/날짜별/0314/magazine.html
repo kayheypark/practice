@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magazine</title>
+    <style type="text/css">
+body,h1,p,hr,ul,li {margin: 0;padding: 0;}
+body {font-style: 90%; line-height: 1.5; font-family: Arial;}
+ul {list-style: none;}
+img {border: 0;}
+body, #nav {margin: 20px;}
+
+/* 76px : 2개, 38px : 1개 */
+
+li {float: left;}
+li a{display: block; width: 109px; height:38px; text-indent: -9999px; overflow: hidden;}
+li.menu1 a{background: url(images/menu1.jpg) no-repeat 0 0;}
+li.menu2 a{background: url(images/menu2.jpg) no-repeat 0 0;}
+li.menu3 a{background: url(images/menu3.jpg) no-repeat 0 0;}
+li.menu4 a{background: url(images/menu4.jpg) no-repeat 0 0;}
+li a:hover{background-position: 0 -76px;}
+li a.selected{background-position: 0 -38px;}
+    </style>
+</head>
+<body>
+    <h1>Index</h1>
+    <p>원래는 회색, 현재페이지의 메뉴는 자주색, 오버메뉴는 라임색. </p>
+    <hr />
+    <ul id="nav">
+        <li class="menu1"><a href="index.html">home</a></li>
+        <li class="menu2"><a href="guide.html">guide</a></li>
+        <li class="menu3"><a href="magazine.html" class="selected">magazine</a></li>
+        <li class="menu4"><a href="bbs.html">bbs</a></li>
+    </ul>
+</body>
+</html>
