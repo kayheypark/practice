@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭메뉴</title>
+    <script type="text/javascript" src="js/tab.js"></script>
+    <style type="text/css">
+
+
+body, dl, dt, dd {margin: 0;padding: 0;}
+dl, dt, dd {list-style: none;}
+img {border: none;}
+
+dl.tabMenu {position: relative; left: 20px; top: 20px; width: 200px;}
+dl.tabMenu dt {float: left; margin: 3px;}
+dl.tabMenu dd {position: absolute; left: 150px;top: 0px;}
+
+
+    </style>
+</head>
+<body>
+    <dl id="tabMenu" class="tabMenu">
+        <dt><a href="#sub1" class="tab"><img src="images/webzine_s01.gif" alt="작은웹진이미지1"></a></dt>
+        <dd id="sub1"><img src="images/webzine_l01.gif" alt="큰웹진이미지1"></dd>
+
+        <dt><a href="#sub2" class="tab"><img src="images/webzine_s02.gif" alt="작은웹진이미지2"></a></dt>
+        <dd id="sub2"><img src="images/webzine_l02.gif" alt="큰웹진이미지2"></dd>
+
+        <dt><a href="#sub3" class="tab"><img src="images/webzine_s03.gif" alt="작은웹진이미지3"></a></dt>
+        <dd id="sub3"><img src="images/webzine_l03.gif" alt="큰웹진이미지3"></dd>
+
+        <dt><a href="#sub4" class="tab"><img src="images/webzine_s04.gif" alt="작은웹진이미지4"></a></dt>
+        <dd id="sub4"><img src="images/webzine_l04.gif" alt="큰웹진이미지4"></dd>
+    </dl>
+    <script type="text/javascript">
+    initTabMenu("tabMenu");
+    </script>
+</body>
+</html>
+
+<!--
+    js
+    dt a class
+    id값에 링크
+
+-->
