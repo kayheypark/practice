@@ -1,29 +1,38 @@
 /* wrap */
 #wrap {width: 1000px; margin: 0 auto; }
 /* header */
-#header {position: relative; }
+#header {position: relative; padding-top:30px;}
     /* 탑메뉴 */
-    #topMenu { height: 80px;  }
+    #topMenu { position: absolute; top: 0; right: 0;}
+    #topMenu h1{float: left;}
+    #topMenu dl.topMenu {
+                float: right;
+                height: 17px;
+                background: url(../images/top_left.gif) no-repeat 0 0;
+    
+    }
+    #topMenu dl dd {float: left; padding-right: 15px; margin-left: 15px;
+                    background: url(../images/t.gif) no-repeat 100% 50%;
+        }
+    #topMenu dl dd.right {background: url(../images/top_right.gif) no-repeat 100% 0;}
+    /* #topMenu { height: 80px;  }
     #topMenu h1{float: left;}
     #topMenu dl { width: 200px;
         position: absolute; top: 0; right: 8px;
         background: url(../images/top_left.gif) no-repeat 0 0;
-        /* background: url(../images/top_right.gif) no-repeat 100% 0; */
+  
     }
     #topMenu dl dd {float: left; margin-left: 1px;
                     background: url(../images/t.gif) no-repeat 100% 0;
                     padding-right: 12px;
     
     }
-    #topMenu dl dd.mnone {margin-left: 20px;}
+    #topMenu dl dd.mnone {margin-left: 20px;} */
     /* 주메뉴 */
-    #mainMenu { float: right; }
-    #mainMenu ul  {position: absolute; top: 30px; right: 0;}
+    #mainMenu { }
+    #mainMenu ul  {position: absolute; top: 50px; right: 0;}
     #mainMenu ul li {float: left; padding-left: 50px;}
     
-    /* #mainMenu {clear: both; }
-    #mainMenu ul  {float: right; position: absolute; top: 30px; right: 0px;}
-    #mainMenu ul li {float: left; padding-left: 50px;} */
 
 /* 컨테이너 */
 #container {}
@@ -53,23 +62,26 @@
         #container #content #quickmenu ul li.mid {float: left;}
         #container #content #quickmenu ul li.last {float: right;}
 
-
-/* 푸터 */
-#footer { clear: both;
-        margin: 0 auto;
-        padding-top: 30px;
-        margin-top: 170px;
-        width: 1000px;
-        height: 100px;
-        background-color: #f0f0f0;}
-#footer p {float: left; padding-left: 15px;}
-#footer ul {float: left; padding-left: 35px;}
-#footer address {float: left; padding-left: 35px; padding-top: 10px;}
-
-#footer ul li.first {width: 95px;} 
-#footer ul li { 
+        
+        
+        /* 푸터 */
+        #footer { clear: both;
+            position: relative;
+            margin: 0 auto;
+            padding-top: 30px;
+            margin-top: 170px;
+            width: 1000px;
+            height: 100px;
+            background-color: #f0f0f0;}
+            #footer p {float: left; padding-left: 15px;}
+            #footer ul {float: left; padding-left: 35px;}
+            #footer address {float: left; padding-left: 35px; padding-top: 10px;}
+            
+            #footer ul li.first {width: 95px;} 
+            #footer ul li { 
                 float: left;
                 width: 60px;
                 height: 20px;
                 margin-right: 10px;
                 background: url(../images/f.gif) no-repeat 100% 50%;}
+                
