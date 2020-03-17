@@ -62,13 +62,14 @@
         width: 1000px;
         height: 100px;
         background-color: #f0f0f0;}
-#footer ul {padding-left: 85px;}
-#footer address {padding-left: 85px;}
-
 #footer p {float: left; padding-left: 15px;}
-#footer ul {float: left; }
+#footer ul {float: left; padding-left: 35px;}
+#footer address {float: left; padding-left: 35px; padding-top: 10px;}
+
+#footer ul li.first {width: 95px;} 
 #footer ul li { 
                 float: left;
-                margin-right: 20px;
-                background: url(../images/f.gif) no-repeat 0 0;}
-#footer address {float: left; padding-top: 10px;}
+                width: 60px;
+                height: 20px;
+                margin-right: 10px;
+                background: url(../images/f.gif) no-repeat 100% 50%;}
