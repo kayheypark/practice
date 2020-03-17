@@ -1,0 +1,43 @@
+/* main.css */
+
+/* common */
+body {font-size: 12px;
+    font-family: Dotum, "돋움", Helvetica, AppleGothic sans-serif;
+    color: #797979;
+    background: #2a377f url(../images/bg_body.jpg) repeat-x 50% 0;
+}
+a:link, a:visited {text-decoration: none; color: #808080;}
+a:hover, a:active, a:focus {text-decoration: underline; color: #56619e;}
+
+/* layout */
+#wrap { width: 960px; margin: 0 auto; border: 1px solid red;}
+    #header { position: relative; width: 960px; height: 90px; border: 1px solid blue;}
+    #container {width: 960px; border: 1px solid green;}
+        .main_visual {width: 960px;}
+        #content {width: 960px;}
+    #footer {width: 960px; height: 70px; border: 1px solid blue;}
+
+/* header */
+h1.logo {float: left; margin-top: 30px;}
+
+/* 탑메뉴 */
+dl.topMenu {float: right; margin-top: 10px;}
+dl.topMenu dd {float: left;
+    padding-right: 11px;
+    margin-right: 4px;
+    background: url(../images/bg_sideMenu.gif) no-repeat 100% 50%;}
+
+dl.topMenu dd.last {background : none; padding-right: 0;}
+
+/* 주메뉴 */
+ul.gnb {/*clear: both; float: right;*/ position: absolute; right: 0; top: 60px;}
+ul.gnb li {float: left; margin-right: 30px;}
+ul.gnb li.last {float: left; margin-right: 0;}
+
+/* container */
+/* main_visual */
+/* content */
+/* 퀵메뉴 */
+/* 인재상 */
+/* 인터뷰 */
+/* footer */
