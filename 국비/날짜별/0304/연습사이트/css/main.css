@@ -1,22 +1,56 @@
 /* wrap */
-#wrap {width: 1200px; margin: 0 auto; border: 1px solid red;}
+#wrap {width: 1000px; margin: 0 auto; border: 1px solid red;}
 /* header */
-#header {border: 1px solid blue;}
+#header {position: relative; border: 1px solid blue;}
     /* 탑메뉴 */
-    #topMenu {border: 2px solid yellow;}
+    #topMenu { height: 80px;  border: 2px solid black;}
     #topMenu h1{float: left;}
-    #topMenu dl {width: 300px; height: 17px; float: right; background: url(../images/top_left.gif) no-repeat;}
-    #topMenu dl dt {}
-    #topMenu dl dd {float: left; margin-right: 10px;}
+    #topMenu dl { width: 200px;
+        position: absolute; top: 0; right: 8px;
+        background: url(../images/top_left.gif) no-repeat 0 0;
+        /* background: url(../images/top_right.gif) no-repeat 100% 0; */
+    }
+    #topMenu dl dd {float: left; margin-left: 1px;
+                    background: url(../images/t.gif) no-repeat 100% 0;
+                    padding-right: 12px;
+    
+    }
+    #topMenu dl dd.mnone {margin-left: 20px;}
     /* 주메뉴 */
-    #mainMenu {clear: both; border: 2px solid yellow;}
+    #mainMenu { float: right; border: 2px solid yellow; background-color: yellow;}
+    #mainMenu ul  {position: absolute; top: 30px; right: 0;}
+    #mainMenu ul li {float: left; padding-left: 50px;}
+    /* #mainMenu {clear: both; border: 2px solid yellow;}
+    #mainMenu ul  {float: right; position: absolute; top: 30px; right: 0px;}
+    #mainMenu ul li {float: left; padding-left: 50px;} */
 
 /* 컨테이너 */
+#container {}
     /* 메인비주얼 */
+    #container #m_vis {}
     /* 컨텐트 */
+    #container #content {width: 1000px; float: left;}
         /* 비즈인포 */
+        #container #content #bizInfo h3 {border-bottom: 2px solid #ddd;}
+        #container #content #bizInfo { position: relative; float: left; width: 300px; border: 2px solid green;}
         /* 노티스뉴스 */
+        #container #content #noticeNews { position: relative; float: left; margin-left: 20px; width: 350px; border: 2px solid green;}
+        #container #content #noticeNews h3 {border-bottom: 2px solid #ddd;}
+        #container #content #noticeNews li {margin-top: 10px; height: 12px; padding-left: 10px; background: url(../images/icon_dot.gif) no-repeat 0 50%;}
+        #container #content #noticeNews li span {float: right;}
+        #container #content #noticeNews .more {position: absolute; top: 0; right: 0;}
+        #container #content #noticeNews a {text-decoration: none; color: #000;}
+        #container #content #noticeNews a:hover {text-decoration: underline; color: #ddd;}
         /* 퀵메뉴 */
+        #container #content #quickmenu {float: right; width: 300px; border: 2px solid green;}
+        #container #content #quickmenu h3 {border-bottom: 2px solid #ddd;}
+        #container #content #quickmenu ul {}
+        #container #content #quickmenu ul li {float: left;}
+
 
 /* 푸터 */
-#footer {border: 1px solid blue;}
+#footer { clear: both; margin: 0 auto; padding-top: 30px; height: 200px; border: 1px solid blue; background-color: #ddd;}
+#footer p {float: left;}
+#footer ul {float: left;}
+#footer ul li {float: left;}
+#footer address {float: left;}

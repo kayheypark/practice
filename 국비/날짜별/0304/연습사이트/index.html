@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAYANA</title>
-    <script type="text/javascript" src="js/tab.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -22,13 +21,14 @@
 
     <!-- 전체레이아웃 -->
     <div id="wrap">
+        <div id="noFooter">
         <!-- 헤더 -->
         <div id="header">
             <div id="topMenu">
                 <h1><a href="#"><img src="images/logo.gif" alt="NAYANA BUSINESS" /></a></h1>
                 <dl>
                     <dt><a href="#" class="blind">탑메뉴</a></dt>
-                    <dd><a href="#"><img src="images/t_m_home.gif" alt="HOME" /></a></dd>
+                    <dd class="mnone"><a href="#"><img src="images/t_m_home.gif" alt="HOME" /></a></dd>
                     <dd><a href="#"><img src="images/t_m_login.gif" alt="LOGIN" /></a></dd>
                     <dd><a href="#"><img src="images/t_m_join.gif" alt="JOIN" /></a></dd>
                     <dd><a href="#"><img src="images/t_m_sitemap.gif" alt="SITEMAP" /></a></dd>
@@ -65,12 +65,12 @@
                 <div id="noticeNews">
                     <h3><a href="#"><img src="images/m_tit_notice.gif" alt="NOTICE & NEWS" /></a></h3>
                     <ul>
-                        <li><a href="#">notice1</a><span>2011-02-21</span></li>
-                        <li><a href="#">notice2</a><span>2011-02-20</span></li>
-                        <li><a href="#">notice3</a><span>2011-02-19</span></li>
-                        <li><a href="#">notice4</a><span>2011-02-18</span></li>
+                        <li><a href="#">notice 1</a><span>2011-02-21</span></li>
+                        <li><a href="#">notice 2</a><span>2011-02-20</span></li>
+                        <li><a href="#">notice 3</a><span>2011-02-19</span></li>
+                        <li><a href="#">notice 4</a><span>2011-02-18</span></li>
                     </ul>
-                    <p><a href="#"><img src="images/more.gif" alt="MORE" /></a></p>
+                    <p class="more"><a href="#"><img src="images/more.gif" alt="MORE" /></a></p>
                 </div>
                 <div id="quickmenu">
                     <h3><a href="#"><img src="images/m_tit_quick.gif" alt="QUICK MENU" /></a></h3>
@@ -87,6 +87,7 @@
         </div>
         <!-- //컨테이너 -->
         <hr />
+    </div>
         
         <!-- 푸터 -->
         <div id="footer">
