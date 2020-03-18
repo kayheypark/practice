@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 : border-radius</title>
+    <style>
+        li {
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        h1 {
+            width: 500px;
+            height: 100px;
+            background-color: green;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            border: double 10px yellow;
+            border-radius: 50px 30px 10px 0px;
+        }
+
+        /*
+            top-left top-right bottom-right bottom-left (시계방향)
+            border-radius: 50px 30px 10px 0px;
+            border-radius: 50px 30px 10px
+            border-radius: 50px 30px 
+        
+        */
+
+        /* 원은 width, height 값의 1/2로 지정하면 된다 */
+        .c1 {background-color: #f00; border-radius: 100px;}
+        .c2 {background-color: #00f; border-radius: 50%;}
+        .c3 {background-color: #f00; width: 200px; height: 100px; border-radius: 100px 100px 0 0;}
+        .c4 {background-color: #00f; width: 200px; height: 100px; border-radius: 0 0 100px 100px;}
+        .c5 {background-color: #f00; width: 100px; height: 100px; border-radius: 100px 0 0 0;}
+        .c6 {background-color: #00f; width: 100px; height: 100px; border-radius: 0 0 100px 0;}
+        /* border-top-left-radius,      border-top-right-radius
+            border-bottom-left-radius   border-bottom-right-radius */
+    </style>
+</head>
+
+<body>
+    <h1>css3 : border-radius</h1>
+    <ul>
+        <li class="c1">원 그리기</li>
+        <li class="c2">원 그리기</li>
+        <li class="c3">반원 그리기</li>
+        <li class="c4">반원 그리기</li>
+        <li class="c5">1/4원 그리기</li>
+        <li class="c6">1/4원 그리기</li>
+    </ul>
+</body>
+
+</html>

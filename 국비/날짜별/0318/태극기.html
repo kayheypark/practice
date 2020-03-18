@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태극기</title>
+    <style>
+        body {
+            background-color: #ddd;
+        }
+
+        .bigRed {
+
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100px 100px 0 0;
+
+        }
+
+        .bigBlue {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 0 0 100px 100px;
+
+        }
+
+        .smallRed {
+            position: absolute;
+            top: -50%;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 100px 100px 100px 100px;
+        }
+
+        .smallBlue {
+            position: absolute;
+            top: -50%;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 100px 100px 100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigRed">
+    </div>
+    <div class="bigBlue">
+        <div class="smallRed"></div>
+        <div class="smallBlue"></div>
+    </div>
+</body>
+
+</html>
