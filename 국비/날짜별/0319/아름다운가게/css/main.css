@@ -8,19 +8,37 @@ a{color:#30323f;text-decoration:none}
 a:hover{color:#4559E9;text-decoration:underline}
 
 /* layout */
-#wrap {height: 1000px; background-color: #ddd;}
+#wrap {height: 1000px; }
 /* header */
-#header { background: red; margin: 0 auto;}
+#header { margin: 0 auto;}
+#header h1.logo {position: absolute; top: 15px;}
+#header h1.logo a {display: block; background: url(../images/logo.gif) no-repeat 0 0; width: 125px; height: 31px; text-indent:-9999px;overflow:hidden;
+
+
+}
 /* 탑메뉴 */
-#header	#topMenu {width: 1280px; height: 50px; margin: 0 auto; background: #fff;}
-#header #mainMenu {width: 100%; height: 50px; background: green;}
+#header	#topMenu {width: 1280px; height: 65px; margin: 0 auto; background: #fff;}
+#header	#topMenu dl{float: right; padding-top: 10px;}
+#header	#topMenu dl dd{float: left; padding-left: 20px;}
+
+#header #mainMenu {clear: both; width: 100%; height: 35px; background: url(../images/M_bg.gif) repeat-x 0 0;}
+#header #mainMenu #mainMenuMid {width: 1280px;height: 35px; margin: 0 auto;}
+
 /* 주메뉴 */
+ul.gnb li {float: left; width: 200px; position: relative;}
+ul.gnb li a {display: block; width: 150px; height: 35px; background: url(../images/M_Intro.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
+ul.gnb li.menu2 a {display: block; width: 150px; height: 35px; background: url(../images/M_Join.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
+ul.gnb li.menu3 a {display: block; width: 150px; height: 35px; background: url(../images/M_Share.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
+ul.gnb li.menu4 a {display: block; width: 150px; height: 35px; background: url(../images/M_Story.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
+ul.gnb li.menu5 a {display: block; width: 150px; height: 35px; background: url(../images/M_Event.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
+ul.gnb li.menu6 a {display: block; width: 150px; height: 35px; background: url(../images/M_Comm.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
+
 #container {width: 1280px; height: 800px; background: red; margin: 0 auto;}
 /* container */
 #container {width: 1280px; height: 800px;}
 /* content */
-#container #content1 {float: left; width: 640px; height: 800px; background: #fff;}
-#container #content2 {float: right; width: 640px; height: 800px; background: #85d;}
-#container #header:content2 {content: ""; display: block; clear: both;}
+#container #contentL {float: left; width: 640px; height: 800px; background: #fff;}
+#container #contentR {float: right; width: 640px; height: 800px; background: #85d;}
+#container #header:after {content: ""; display: block; clear: both;}
 /* footer */
 #footer {width: 1280px; height: 100px; background: #5255; margin: 0 auto;}
