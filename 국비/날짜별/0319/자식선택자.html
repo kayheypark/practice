@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3:자식선택자</title>
+    <style>
+        .parent > p{color: red;}
+        .gnb > li > a {color: red;}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>2하위 선택자에서 특정 선택자 내에 포함되어 있는 경우는 모두 적용하지만, 자식 선택자는 정호가히 부모 요소 밑에 포함된 자식 요소에만 스타일을 제공. ie6.0.안됨</p>
+        <div class="child">
+            <p>3이 단락은 parent 클래스를 기준으로 자식 요소가 아닌 손자 요소에 해당하기 때문에 스타일이 적용되지 않습니다.</p>
+        </div>
+    </div>
+    <ul class="gnb">
+        <li><a href="#">메뉴1</a>
+            <ul>
+                <li><a href="#">하위메뉴1</a></li>
+                <li><a href="#">하위메뉴2</a></li>
+                <li><a href="#">하위메뉴3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">메뉴2</a>
+            <ul>
+                <li><a href="#">하위메뉴1</a></li>
+                <li><a href="#">하위메뉴2</a></li>
+                <li><a href="#">하위메뉴3</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

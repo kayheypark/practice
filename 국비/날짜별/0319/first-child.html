@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3:first-child</title>
+    <style>
+        .child p:first-child {color:red}
+        .child p:last-child {color:blue}
+        h2 ~ div {text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <h2>first-child 가상클래스</h2>
+    <div class="child">
+        <p>first-child 가상 클래스는 첫 번째 자식 요소에만 스타일을 적용할 수 있는 선택자입니다.</p>
+        <p>child 클래스의 두 번째 자식요소에는 스타일이 적용되지 않습니다.</p>
+        <p>child 클래스의 세 번째 자식요소에는 스타일이 적용되지 않습니다.</p>
+    </div>
+    <div class="child">
+        <p>first-child 가상 클래스는 첫 번째 자식 요소에만 스타일을 적용할 수 있는 선택자입니다.</p>
+        <p>child 클래스의 두 번째 자식요소에는 스타일이 적용되지 않습니다.</p>
+        <p>child 클래스의 세 번째 자식요소에는 스타일이 적용되지 않습니다.</p>
+    </div>
+</body>
+</html>

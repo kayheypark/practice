@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 : Gradient</title>
+    <style>
+        div {width: 200px;height: 200px;}
+        .grad1 {background: #f00;
+        background: linear-gradient(45deg, #f00, #00f);}
+
+        /* 방향 to bottom, to riht, to bottom right, 45deg각도
+        시작색, 끝색 */
+        .grad2 {background: #f00;
+        background: linear-gradient(45deg, #f00 0%, #0f0 50%, #00f 100%);}
+        /* 방향, 색상 위치, 색상 위치  */
+
+        .grad3 {
+            width: 500px;
+            background: #f00;
+        background: radial-gradient(circle at center, #f00 0%, #00f 100%);}
+        /* 모양은 circle(원형)과 ellipse(타웒ㅇ) */
+            /* 그라데이션 원의 크기 지정 */
+            /* closest-side, contain그라데이션이 가장 가까운 면과 만난다.
+            closest-corner 가장 가까운 상자에 꽉 찬다.
+            fartheset-side 상자의 가장 멀리 있는 면과 만난다.
+            farthest-corner, cover 가장 멀리 있는 상자에 꽉찬다.
+             */
+        .grad4 {background: #f00;
+                background: repeating-linear-gradient(yellow, yellow, 20px, red 20px, red 40px);}
+        .grad5 {background:  #f00;
+                background: repeating-radial-gradient(yellow,  yellow 20px, red 20px, red 40px);}
+                
+        .grad6 {
+            width: 500px; background: #f00;
+            background: radial-gradient(fartheset-corner at 40px 40px, #f00 0%, #00f 100%);}
+        .grad7 {width: 370px; height: 50px;
+                background: #cb60b3;
+                background: linear-gradient(to bottom, #cb60b3 0%, #c146a1 50%, #a80077 51%, #db36a4 52%);
+        
+        
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>그라데이션</h1>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+    <div class="grad5"></div>
+    <div class="grad6"></div>
+    <div class="grad7"></div>
+</body>
+</html>

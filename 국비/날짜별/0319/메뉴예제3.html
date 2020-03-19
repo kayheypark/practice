@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴예제3</title>
+    <style>
+        ul,li {list-style-type: none;}
+        
+        ul {}       
+        ul li {float: left;}
+        ul li a {
+            display: inline-block;
+            box-shadow: 1px 1px 2px #000;
+            background:linear-gradient(to bottom, #fff 0%, gray 100%);
+            padding: 15px 30px;
+            font-size: 14px;
+            font-family: Arial;
+            text-decoration: none;
+            color: #000;
+            text-shadow: 1px 1px 2px #fff;
+            border-right: 1px solid #888;
+            
+            }
+        ul li a:hover {background: #000; color: #fff;}
+        ul li:first-child a {border-radius: 0.5em 0 0 0.5em;}
+        ul li:last-child a {border-radius: 0 0.5em 0.5em 0; border-right: none;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">JQuery</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

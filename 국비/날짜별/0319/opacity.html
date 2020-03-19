@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3:opacity</title>
+    <style>
+
+div {width: 300px;height: 130px;padding-top: 30px;margin: 20px 0;
+background: url(images/bg1.jpg) no-repeat 0 0;}
+
+h1 {background: #fff; color: #000;
+    font-size: 60px; text-align: center; font-weight: bold;
+}
+
+.opa1 {background: rgba(255, 255, 255, 0.5); color: rgba(0, 0, 0, 1.0);}
+.opa2 {opacity: 0.5;}
+/* poacity 불투명도 : 0~1, 배경과 글씨가 같이 흐려짐 */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="noopa">Opacity</h1>
+    </div>
+    <div>
+        <h1 class="opa1">Opacity</h1>
+    </div>
+    <div>
+        <h1 class="opa2">Opacity</h1>
+    </div>
+</body>
+</html>
