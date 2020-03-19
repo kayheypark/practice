@@ -38,6 +38,7 @@ ul.gnb li.menu6 a {background: url(../images/M_Comm.gif) no-repeat 0 0;}
 /* container */
 /* content */
 #container #contentL {float: left; width: 640px; height: 800px; background: #fff;}
+#container #contentL .card {width: 570px; height: 256px; background: url(../images/card.gif) no-repeat 0 0;}
 #container #contentR {float: right; width: 640px; height: 800px; background: #85d;}
 #container #header:after {content: ""; display: block; clear: both;}
 /* footer */
