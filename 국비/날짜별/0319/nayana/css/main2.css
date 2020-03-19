@@ -22,7 +22,14 @@ a:hover{color:#4559E9;text-decoration:underline}
 
 /* header */
 h1.logo {position: absolute; left: 0; top: 17px;}
-h1.logo a{background: url(../images/logo.gif) no-repeat 0 0;}
+h1.logo a{
+    display: block;
+    width: 210px;
+    height: 63px;
+    background: url(../images/logo.gif) no-repeat 0 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
 /* 탑메뉴 */
 dl.topMenu {float: right;}
 /* 주메뉴 */
