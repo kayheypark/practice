@@ -8,9 +8,19 @@ a{color:#30323f;text-decoration:none}
 a:hover{color:#4559E9;text-decoration:underline}
 
 /* layout */
+#wrap {height: 1000px; background-color: #ddd;}
 /* header */
+#header { background: red; margin: 0 auto;}
 /* 탑메뉴 */
+#header	#topMenu {width: 1280px; height: 50px; margin: 0 auto; background: #fff;}
+#header #mainMenu {width: 100%; height: 50px; background: green;}
 /* 주메뉴 */
+#container {width: 1280px; height: 800px; background: red; margin: 0 auto;}
 /* container */
+#container {width: 1280px; height: 800px;}
 /* content */
+#container #content1 {float: left; width: 640px; height: 800px; background: #fff;}
+#container #content2 {float: right; width: 640px; height: 800px; background: #85d;}
+#container #header:content2 {content: ""; display: block; clear: both;}
 /* footer */
+#footer {width: 1280px; height: 100px; background: #5255; margin: 0 auto;}
