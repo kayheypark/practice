@@ -25,17 +25,17 @@ a:hover{color:#4559E9;text-decoration:underline}
 #header #mainMenu #mainMenuMid {width: 1280px;height: 35px; margin: 0 auto;}
 
 /* 주메뉴 */
-ul.gnb li {float: left; width: 200px; position: relative;}
+ul.gnb {}
+ul.gnb li {float: left; width: 213px; position: relative;}
 ul.gnb li a {display: block; width: 150px; height: 35px; background: url(../images/M_Intro.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
-ul.gnb li.menu2 a {display: block; width: 150px; height: 35px; background: url(../images/M_Join.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
-ul.gnb li.menu3 a {display: block; width: 150px; height: 35px; background: url(../images/M_Share.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
-ul.gnb li.menu4 a {display: block; width: 150px; height: 35px; background: url(../images/M_Story.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
-ul.gnb li.menu5 a {display: block; width: 150px; height: 35px; background: url(../images/M_Event.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
-ul.gnb li.menu6 a {display: block; width: 150px; height: 35px; background: url(../images/M_Comm.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
+ul.gnb li.menu2 a {background: url(../images/M_Join.gif) no-repeat 0 0;}
+ul.gnb li.menu3 a {background: url(../images/M_Share.gif) no-repeat 0 0;}
+ul.gnb li.menu4 a {background: url(../images/M_Story.gif) no-repeat 0 0;}
+ul.gnb li.menu5 a {background: url(../images/M_Event.gif) no-repeat 0 0;}
+ul.gnb li.menu6 a {background: url(../images/M_Comm.gif) no-repeat 0 0;}
 
 #container {width: 1280px; height: 800px; background: red; margin: 0 auto;}
 /* container */
-#container {width: 1280px; height: 800px;}
 /* content */
 #container #contentL {float: left; width: 640px; height: 800px; background: #fff;}
 #container #contentR {float: right; width: 640px; height: 800px; background: #85d;}
