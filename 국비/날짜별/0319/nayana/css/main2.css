@@ -31,9 +31,21 @@ h1.logo a{
     overflow: hidden;
 }
 /* 탑메뉴 */
-dl.topMenu {float: right;}
-dl.topMenu dd {float: right;}
-dl.topMenu dd a {background: url(../images/top_left.gif) no-repeat 0 0;}
+dl.topMenu {
+	float: right;
+	background: url(../images/top_left.gif) no-repeat 0 0;
+	padding: 18px;
+	
+
+
+}
+dl.topMenu dd {float: left;
+
+
+}
+dl.topMenu dd a {
+
+}
 /* 주메뉴 */
 ul.gnb {clear: both; float: right;}
 ul.gnb li{float: left;}
