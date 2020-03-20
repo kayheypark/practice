@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2D,3D</title>
+    <style>
+img {margin: 100px;}
+
+
+/* scale(가로,세로), scaleX(가로), scaleY(세로) */
+.scale {transform: scale(0.5);}
+
+/* 로테이트 */
+.rotate {transform: rotate(-45deg);}
+
+/* skew(x,y) - 값이 하나만 있으면 y는 0, skewX(각도), skewY(각도) */
+.skew {transform: skew(15deg, 15deg);}
+
+/* 이동 translate(x,y) - 값이 하나만 있으면 y는 0, translateX(), translateY() */
+.translate {transform: translate(500px, 500px); border: solid 1px red;}
+.origin {transform: rotate(15deg) scale(0.5) translate(500px) skew(15deg);}
+/* -webkit-transform: rotate(15deg) scale(0.5) translate(500px) skew(15deg); 오페라는 웹킷 꽂아주기 가능 */
+
+.translateZ {}
+.rotateX {}
+    </style>
+</head>
+<body>
+    <figure>
+        <img class="rotate" src="photo.jpg" alt="" />
+        <img class="scale" src="photo.jpg" alt="" />
+        <img class="skew" src="photo.jpg" alt="" />
+        <img class="translate" src="photo.jpg" alt="" />
+        <img class="origin" src="photo.jpg" alt="" />
+        <img class="translateZ" src="photo.jpg" alt="" />
+        <img class="rotateX" src="photo.jpg" alt="" />
+    </figure>
+</body>
+</html>
