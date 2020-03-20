@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 : transition</title>
+    <style>
+.box {width: 100px;height: 100px;background:yellow;margin: 100px;
+transition: all 1s ease 100ms;}
+.box:hover {width: 200px;height: 200px; border-radius: 100px; background:green; transform: rotate(520deg);}
+
+/* 
+
+transition:
+property - 모든 속성 또는 일부 속성에 애니메이션 적용 (all, background, color, height, width, transform)
+duration - 시작해서 끝날 때까지의 시간, 초단위로 지정
+timingfunction - ease, liner 길이 증가, ease-in 가속, sase-out 감속, ease-in-out, cubic-beizer 베이지어 곡선 등 중에서 선택
+
+linear        일정한 간격으로 움직임
+ease          처음: 서서히 가속               마지막: 급격감속
+ease-in       처음: 최대속소,                 마지막: 가속
+ease-out      처음: 최대속도 시작             마지막: 감속
+ease-in-out   처음: 제로속도      중간:최고   마지막: 서서히감속
+
+cubic-bezier 직접 값을 입력해서 속도조절
+delay 입력한 시간만큼 지난 후 작동함
+
+ */
+
+
+.timing_fun div{float: left; width: 100px; height: 50px; margin: 5px 10px;
+padding: 5px; color: white; background-color: #006aff; text-align: center;
+border-radius: 5px; font-weight: bold;}
+
+.timing_fun div.ease {transition: height 3s ease 0s;}
+.timing_fun div.linear {transition: height 3s linear 0s;}
+.timing_fun div.ease-in {transition: height 3s ease-in 0s;}
+.timing_fun div.ease-out {transition: height 3s ease-out 0s;}
+.timing_fun div.ease-in-out {transition: height 3s ease-in-out 0s;}
+.timing_fun:hover div {height: 400px;}
+/* matthewlein.com/ceaser */
+.red {width: 100px; height: 50px; background-color: red;
+transition: all 500ms cubic-bezier(1.000, -0.600, 0.180, 1.440) 0s;
+}
+.red:hover {transform: translateX(500px);}
+.blue {width: 100px; height: 50px; background-color: blue; border-radius: 100px;
+transition: all 1000ms cubic-bezier(1.000, -0.600, 0.180, 1.440) 0s;
+}
+.blue:hover {transform: translateX(200px);}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="timing_fun">
+        <div class="ease">ease</div>
+        <div class="linear">linear</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+    </div>
+</body>
+</html>
