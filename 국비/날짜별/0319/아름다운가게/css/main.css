@@ -17,29 +17,59 @@ a:hover{color:#4559E9;text-decoration:underline}
 
 }
 /* 탑메뉴 */
-#header	#topMenu {width: 1280px; height: 65px; margin: 0 auto; background: #fff;}
+#header	#topMenu {width: 900px; height: 65px; margin: 0 auto; background: #fff;}
 #header	#topMenu dl{float: right; padding-top: 10px;}
 #header	#topMenu dl dd{float: left; padding-left: 20px;}
 
 #header #mainMenu {clear: both; width: 100%; height: 35px; background: url(../images/M_bg.gif) repeat-x 0 0;}
-#header #mainMenu #mainMenuMid {width: 1280px;height: 35px; margin: 0 auto;}
+#header #mainMenu #mainMenuMid {width: 900px;height: 35px; margin: 0 auto;}
 
 /* 주메뉴 */
 ul.gnb {}
-ul.gnb li {float: left; width: 213px; position: relative;}
+ul.gnb li {float: left; width: 150px; position: relative;}
 ul.gnb li a {display: block; width: 150px; height: 35px; background: url(../images/M_Intro.gif) no-repeat 0 0; text-indent:-9999px;overflow:hidden}
+ul.gnb li.menu a:hover {background: url(../images/M_Intro.gif) no-repeat 0 -35px;}
 ul.gnb li.menu2 a {background: url(../images/M_Join.gif) no-repeat 0 0;}
+ul.gnb li.menu2 a:hover {background: url(../images/M_Join.gif) no-repeat 0 -35px;}
 ul.gnb li.menu3 a {background: url(../images/M_Share.gif) no-repeat 0 0;}
+ul.gnb li.menu3 a:hover {background: url(../images/M_Share.gif) no-repeat 0 -35px;}
 ul.gnb li.menu4 a {background: url(../images/M_Story.gif) no-repeat 0 0;}
+ul.gnb li.menu4 a:hover {background: url(../images/M_Story.gif) no-repeat 0 -35px;}
 ul.gnb li.menu5 a {background: url(../images/M_Event.gif) no-repeat 0 0;}
+ul.gnb li.menu5 a:hover {background: url(../images/M_Event.gif) no-repeat 0 -35px;}
 ul.gnb li.menu6 a {background: url(../images/M_Comm.gif) no-repeat 0 0;}
+ul.gnb li.menu6 a:hover {background: url(../images/M_Comm.gif) no-repeat 0 -35px;}
 
-#container {width: 1280px; height: 800px; background: red; margin: 0 auto;}
+#container {width: 900px; height: 800px; background: red; margin: 0 auto;}
 /* container */
 /* content */
-#container #contentL {float: left; width: 640px; height: 800px; background: #fff;}
-#container #contentL .card {width: 570px; height: 256px; background: url(../images/card.gif) no-repeat 0 0;}
-#container #contentR {float: right; width: 640px; height: 800px; background: #85d;}
+#container #contentL { padding-top: 30px; float: left; width: 600px; height: 770px; background: #fff;}
+#container #contentL a.card  {display: block; width: 570px; height: 256px; background: url(../images/card.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+div.tdyChoice {width: 600px; font-size: 12px; font-family: Dotum, "돋움", sans-serif; margin-top: 46px;}
+div.tdyChoice h3 {}
+div.tdyChoice h3 a {display: block; width: 72px; height: 26px; background: url(../images/m_t_today.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+div.tdyChoice dl {margin-right: 50px; margin-top: 10px;}
+div.tdyChoice dl {width: 250px;}
+div.tdyChoice dl dt {width: 125px;}
+div.tdyChoice dl dd {width: 125px;}
+div.tdyChoice dl.left {float: left; position: relative;}
+div.tdyChoice dl.right {float: left; position: relative;}
+.left .choiceTit {position: absolute; top: 0; right: 0;  text-align: justify;}
+.left .img a { display: block; width: 124px; height: 88px; background: url(../images/Thumb1.gif) no-repeat 0 0; background-size: 124px 73px; text-indent: -9999px; overflow: hidden;}
+.left .txt {display: block; width: 124px; height: 88px; position: absolute; top: 25px; right: 0px; text-align: left;}
+.right .choiceTit {position: absolute; top: 0; right: 0px;  text-align: justify;}
+.right .img a {display: block; width: 125px; height: 88px; background: url(../images/Thumb2.gif) no-repeat 0 0; background-size: 124px 73px; text-indent: -9999px; overflow: hidden;}
+.right .txt {display: block; width: 125px; height: 88px; position: absolute; top: 25px; right: 0px; text-align: left;}
+#container .tdyChoice:after {content: ""; display: block; clear: both;}
+#container #contentR {float: right; width: 300px; height: 800px; background: #fff;}
 #container #header:after {content: ""; display: block; clear: both;}
+
+/* 퀵배너 */
+.quickBanner {width: 570px; height: 140px; margin-top: 40px;}
+.quickBanner ul {}
+.quickBanner li a {display: block; width: 190px; height: 140px; float: left; text-indent: -9999px; overflow: hidden;}
+li.qb1 a {background: url(../images/m_cs.gif) no-repeat 0 0;}
+li.qb2 a{background: url(../images/hbnr_receipt.gif) no-repeat 0 0;}
+li.qb3 a {background: url(../images/hbnr2_nowonopen.gif) no-repeat 0 0;}
 /* footer */
-#footer {width: 1280px; height: 100px; background: #5255; margin: 0 auto;}
+#footer {width: 900px; height: 100px; background: #5255; margin: 0 auto;}
