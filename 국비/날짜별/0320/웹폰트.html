@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 : @font-face 웹폰트</title>
+    <style>
+        /* trutype(TTF), opentype(OTF)The Web Open Font Format(WOFF) eot*/
+
+        @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+        @import url('https://fonts.googleapis.com/earlyaccess/jejuhallasan.css');
+
+        /* font-face는 폴더에 폰트파일을 업로드하고 내가 이름을 지정해준다. */
+        @font-face {
+            font-family: Sen-Regular;
+            src: url(font/Sen/Sen-Regular.ttf);
+        }
+        @font-face { 
+            font-family: KawaiiFoodFont;
+            src: url(font/kids/KawaiiFoodFont.ttf);
+
+        }
+
+        .text1 {
+            font-family: 'Sen', sans-serif;
+        }
+
+        .text1_1 {
+            font-family: 'Libre Barcode 128 Text', cursive;
+        }
+
+        .text2 {
+            font-family: Sen-Regular;
+        }
+        .text3 {
+            font-family: KawaiiFoodFont;
+            font-size: 50px;
+        }
+        .text4 {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .text5 {
+            font-family: 'Jeju Hallasan', cursive;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="normal_text">ABCDEF</div>
+    <div class="text1">ABCDEFGHIJKLNMOPQRSTUVWXYZ</div>
+    <div class="text1_1">ABCDEFGHIJKLNMOPQRSTUVWXYZ</div>
+    <div class="text2">ABCDEFGHIJKLNMOPQRSTUVWXYZ</div>
+    <div class="text3">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="text3_1">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="text4">나눔고딕이 적용 됩니다.</div>
+    <div class="text5">나눔고딕이 아닙니다. 제주 한라산 입니다.</div>
+    <div class="text6">Merry Christmas</div>
+    <div class="text7">Merry Christmas</div>
+
+</body>
+
+</html>

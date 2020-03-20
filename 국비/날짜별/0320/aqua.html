@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아쿠아버튼</title>
+    <style>
+.button {
+position: relative;
+
+/* 버튼크기 */
+width: 120px;height: 24px;padding: 5px 6px 3px; border-radius: 16px;
+
+/* 그라데이션 */
+background: rgba(60, 132, 198, 0.8);
+background: -webkit-linear-gradient(to bottom, rgba(28,91,155,0.8) 0%, rgba(108,191,255,0.9) 90%);
+background: -moz-linear-gradient(to bottom, rgba(28,91,155,0.8) 0%, rgba(108,191,255,0.9) 90%);
+background: linear-gradient(to bottom, rgba(28,91,155,0.8) 0%, rgba(108,191,255,0.9) 90%);
+
+color: #fff;
+font-weight: 800;
+text-align: center;
+font-family: "Myriad Pro", sans-serif;
+border-width: 2px;
+border-style: solid;
+border-color: #8ba2c1 #5890bf #4f93ca #768fa5;
+
+text-shadow: 1px 2px 2px rgba(10,10,10,0.5);
+box-shadow: 0 10px 16px rgba(66,140,240,0.5);
+}
+
+.aqua {
+position: absolute;
+left: 5px;
+top: 0;
+width: 123px;
+height: 1px;
+padding: 8px 0;
+border-radius: 8px;
+background: rgba(255,255,255,0.25);
+background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 95%);
+
+
+}
+
+.button:hover{top: 1px; text-shadow: 0 0 5px rgb(255,255,255); cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div class="button">
+        <div class="aqua"></div>
+        HTML5
+    </div>
+</body>
+</html>
