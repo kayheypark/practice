@@ -1,0 +1,49 @@
+@import url(reset.css);
+/* main.css*/
+
+/* common */
+body{font-size:12px;color:#333;text-align:center;
+	font-family:Dotum,"돋움",Helvetica,AppleGothic,sans-serif;
+	background:url(../images/M_bg.gif) repeat-x 0 48px;}
+a{text-decoration:none;color:#5b5b5b;}
+a:hover,a:active,a:focus{text-decoration:underline;color:#609e55;}
+
+/* layout */
+#wrap{width:900px;margin:0 auto;text-align:left;border:1px solid red;}
+	#header{width:900px;height:113px;border:1px solid green;}
+	#container{width:900px;border:1px solid red;}
+	#container:after{content:"";display:block;clear:both;}
+		.content1{float:left;width:570px;border:1px solid blue;}
+		.content2{float:right;width:300px;border:1px solid blue;}
+	#footer{width:900px;height:90px;border:1px solid green;}
+
+/* header */
+/* 로고 */
+
+
+/* 탑메뉴 */
+
+
+/* 주 메뉴 */
+
+
+/* container */
+/* content1 */
+
+/* 투데이초이스 */
+
+
+/* 고객센터 */
+
+
+/* content2 */
+/* eventBanner */
+
+
+/* quick */
+
+
+/* 공지사항 ,전국매장소식 */
+
+
+/* footer */
