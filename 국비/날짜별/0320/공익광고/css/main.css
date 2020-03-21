@@ -1,0 +1,82 @@
+@import url(reset.css);
+/* main.css*/
+
+/* common */
+body {font-size: 12px; font-family: Dotum, "돋움", sans-serif;
+
+	background: url(../images/bg_main_x.gif) repeat-x 0 526px;
+
+}
+a{text-decoration:none;color:#5b5b5b;}
+a:hover,a:active,a:focus{text-decoration:underline;color:#609e55;}
+/* layout */
+#wrap { width: 1024px; margin: 0 auto; margin-top: 15px;}
+#header { position: relative; }
+#container { }
+#footer  {}
+#header:after {content: "";display: block;clear: both;}
+#container:after {content: "";display: block;clear: both;}
+#footer:after {content: "";display: block;clear: both;}
+
+/* header */
+/* 로고 */
+h1.logo {float: left;}
+h1.logo a{display: block; width: 71px;height: 56px; background: url(../images/img_ci.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+/* 탑메뉴 */
+#header dl.topMenu {float: right;}
+#header dl.topMenu dd {display: block; padding-right: 10px; margin-left: 10px; float: left; background: url(../images/bul_dot.gif) no-repeat 100% 7px;}
+#header dl.topMenu dd:last-child {background: none; padding: 0;}
+/* 주 메뉴 */
+ul.gnb {position: absolute; top: 15px; right: -15px;}
+ul.gnb a {font-weight: bold; color: #fff;}
+ul.gnb li {float: left; padding-right: 15px; margin-left: 15px;}
+ul.gnb li ul {height: 32px;}
+ul.gnb li ul li:first-child {display: block; background: url(../images/round_first.gif) no-repeat 0 0;}
+ul.gnb li ul li:last-child {display: block; background: url(../images/round_end.gif) no-repeat 100% 0;}
+ul.gnb li.menu1 ul {position: absolute; top: 22px; background-color: #6dd;}
+ul.gnb li.menu1 ul li {display: block; width: 100px; height: 15px; top: 22px; background-color: #6ddd;}
+ul.gnb li.menu2 ul {display: none;}
+ul.gnb li.menu3 ul {display: none;}
+ul.gnb li.menu4 ul {display: none;}
+ul.gnb li.menu5 ul {display: none;}
+ul.gnb li.menu6 ul {display: none;}
+
+
+/* container */
+#container {}
+#container .main_visual {}
+#container .main_visual a {display: block; width: 980px; height: 455px; background: url(../images/main_flash.jpg) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+
+/* content1 */
+.main {position: relative;}
+.main li { height: 12px; padding-top: 10px;}
+.main .notice, .main .faq {width: 200px; height: 100px;}
+.notice, .faq, .site {position: absolute; top: 20px;}
+.main p:first-child { float: left; display: 	block; width: 1024px; height: 155px; background: url(../images/img_main_05.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+.notice {left: 200px;}
+.notice h3 a {display: block; width: 47px; height: 13px; background: url(../images/img_main_01.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+.notice ul li a {float: left;}
+.notice span {float: right;}
+.more a {position: absolute; top: 0; right: 0; display: block; width: 31px; height: 9px; background: url(../images/btn_view.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+.faq {left: 420px;}
+.faq h3 a {display: block; width: 25px; height: 13px; background: url(../images/img_main_02.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+.site {left: 650px;}
+.site h3 a {display: block; width: 59px; height: 13px; background: url(../images/img_main_03.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+.site p a {display: block; width: 240px; height: 78px; background: url(../images/banner_flash.jpg) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+.site p {padding-top: 10px;}
+
+/* footer */
+#footer {}
+#footer p:first-child  {}
+#footer p:first-child a {float: left; margin-right: 32px; margin-top: 11px; display: block; width: 76px; height: 39px; background: url(../images/foot_logo.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+#footer address {float: left;	}
+#footer address ul {margin-top: 11px;}
+#footer address ul li:first-child {display: block; width: 361px; height: 10px; background: url(../images/address.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+#footer address ul li:last-child {display: block; width: 317px; height: 6px; background: url(../images/copy.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+#footer p:last-child {float: right;}
+#footer p:last-child { margin-top: 10px; display: block; width: 126px; height: 29px; background: url(../images/tel.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}

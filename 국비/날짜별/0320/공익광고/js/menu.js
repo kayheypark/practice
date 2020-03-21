@@ -20,7 +20,7 @@ window.onload = function (){
 						nav.menu[seq].onmouseover();
 					else if(nav.current) {
 						menuImg = nav.current.childNodes.item(0);
-						menuImg.src = menuImg.src.replace("_ov.gif", ".gif");
+						menuImg.src = menuImg.src.replace("_on.gif", ".gif");
 						if (nav.current.submenu)
 							nav.current.submenu.style.display = "none";
 						nav.current = null;
@@ -41,14 +41,14 @@ window.onload = function (){
 		navAnchor.onmouseover = navAnchor.onfocus = function () {
 			if (nav.current) {
 				menuImg = nav.current.childNodes.item(0);
-				menuImg.src = menuImg.src.replace("_ov.gif", ".gif");
+				menuImg.src = menuImg.src.replace("_on.gif", ".gif");
 				if (nav.current.submenu)
 					nav.current.submenu.style.display = "none";
 				nav.current = null;
 			}
 			if (nav.current != this) {
 				menuImg = this.childNodes.item(0);
-				menuImg.src = menuImg.src.replace(".gif", "_ov.gif");
+				menuImg.src = menuImg.src.replace(".gif", "_on.gif");
 				if (this.submenu)
 					this.submenu.style.display = "block";
 				nav.current = this;
