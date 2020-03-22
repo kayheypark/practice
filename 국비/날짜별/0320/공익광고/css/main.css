@@ -4,14 +4,14 @@
 /* common */
 body {font-size: 12px; font-family: Dotum, "돋움", sans-serif;
 
-	background: url(../images/bg_main_x.gif) repeat-x 0 526px;
+	background: url(../images/bg_main_x.gif) repeat-x 0 570px;
 
 }
 a{text-decoration:none;color:#5b5b5b;}
 a:hover,a:active,a:focus{text-decoration:underline;color:#609e55;}
 /* layout */
 #wrap { width: 1024px; margin: 0 auto; margin-top: 15px;}
-#header { position: relative; }
+#header { position: relative; height: 100px; }
 #container { }
 #footer  {}
 #header:after {content: "";display: block;clear: both;}
@@ -28,19 +28,30 @@ h1.logo a{display: block; width: 71px;height: 56px; background: url(../images/im
 #header dl.topMenu dd {display: block; padding-right: 10px; margin-left: 10px; float: left; background: url(../images/bul_dot.gif) no-repeat 100% 7px;}
 #header dl.topMenu dd:last-child {background: none; padding: 0;}
 /* 주 메뉴 */
-ul.gnb {position: absolute; top: 15px; right: -15px;}
-ul.gnb a {font-weight: bold; color: #fff;}
-ul.gnb li {float: left; padding-right: 15px; margin-left: 15px;}
-ul.gnb li ul {height: 32px;}
-ul.gnb li ul li:first-child {display: block; background: url(../images/round_first.gif) no-repeat 0 0;}
-ul.gnb li ul li:last-child {display: block; background: url(../images/round_end.gif) no-repeat 100% 0;}
-ul.gnb li.menu1 ul {position: absolute; top: 22px; background-color: #6dd;}
-ul.gnb li.menu1 ul li {display: block; width: 100px; height: 15px; top: 22px; background-color: #6ddd;}
-ul.gnb li.menu2 ul {display: none;}
-ul.gnb li.menu3 ul {display: none;}
-ul.gnb li.menu4 ul {display: none;}
-ul.gnb li.menu5 ul {display: none;}
-ul.gnb li.menu6 ul {display: none;}
+
+.gnb {position: absolute; top: 15px; right: 0;}
+.gnb a {font-weight: bold; color: #fff;}
+.gnb li {float: left; padding-right: 20px;}
+.gnb li ul {display: none;
+position: absolute;
+left: 0;
+top: 20px;
+height: 21px;
+line-height: 21px;
+background-color: #95ca5d;
+}
+
+.gnb li ul li.first { background: url(images/round_first.gif) no-repeat 0 0; padding-left: 14px; }
+.gnb li ul li.last {background: url(images/round_end.gif) no-repeat 100% 0;}
+
+
+.gnb li.menu1 ul {left: 0;}
+.gnb li.menu2 ul {left: 97px;}
+.gnb li.menu3 ul {left: 210px;}
+.gnb li.menu4 ul {left: 300px;}
+.gnb li.menu5 ul {left: 400px;}
+.gnb li.menu6 ul {left: 420px;}
+
 
 
 /* container */

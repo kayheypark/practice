@@ -1,0 +1,57 @@
+@import url(reset.css);
+/* main.css*/
+
+/* common */
+body {font-size: 12px; font-family: Dotum, "돋움", sans-serif;
+
+	background: url(../images/bg_main_x.gif) repeat-x 0 570px;
+
+}
+a{text-decoration:none;color:#5b5b5b;}
+a:hover,a:active,a:focus{text-decoration:underline;color:#609e55;}
+/* layout */
+#wrap { width: 1000px; margin: 0 auto; margin-top: 15px; border: 1px solid red;}
+#header {border: solid 1px blue; }
+#container { border: solid 1px yellow;}
+	.content1 {border: 1px solid #111; float: left; width: 300px; margin-right: 45px;}
+	.content2 {border: 1px solid #111; float: left; width: 300px;}
+	.content3 {border: 1px solid #111; float: right; width: 300px;}
+#footer  {border: solid 1px blue;}
+#header:after {content: "";display: block;clear: both;}
+#container:after {content: "";display: block;clear: both;}
+#footer:after {content: "";display: block;clear: both;}
+
+
+#header dl {float: left;}
+#header dl dd {float: left;}
+#header dl dd.first a {display: block; width: 84px; height: 23px; background: url(../images/topLeftMenu_01.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+#header dl dd.last a {display: block; width: 68px; height: 23px; background: url(../images/topLeftMenu_02.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden;}
+
+.gnb {float: right;}
+.gnb li {float: left;  padding-right: 15px; margin-left: 15px; position: relative; }
+.gnb li ul {float: left;}
+.gnb li ul li {position: absolute; top: 50px; left: 0;}
+
+
+
+p.logo {clear: both; text-align: center; margin-top: 100px;}
+
+
+.content1 p {display: block; width: 292px; height: 318px; background: url(../images/mainQuicMenu_01.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden; }
+.content1 ul {text-indent: -9999px; overflow: hidden;}
+.content2 p {display: block; width: 292px; height: 318px; background: url(../images/mainQuicMenu_02.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden; }
+.content2 ul {text-indent: -9999px; overflow: hidden;}
+.content3 p {display: block; width: 292px; height: 318px; background: url(../images/mainQuicMenu_03.gif) no-repeat 0 0; text-indent: -9999px; overflow: hidden; }
+.content3 ul {text-indent: -9999px; overflow: hidden;}
+
+.content1 .event {display: block; width: 280px; height: 107px; background: url(../images/sinsago_intro_event_03_bg.gif) no-repeat 0 0; margin-top: -40px;}
+.content2 .event {display: block; width: 280px; height: 107px; background: url(../images/sinsago_intro_event_02_bg.gif) no-repeat 0 0; margin-top: -40px;}
+.content3 .event {display: block; width: 280px; height: 107px; background: url(../images/sinsago_intro_event_01_bg.gif) no-repeat 0 0; margin-top: -40px;}
+
+.event {position:relative;}
+.event dl {}
+.event dd {position: absolute; top: 20px; left: 30px;}
+.event dt {float: left; margin-left: 5px; margin-top: 75px;}
+.event dt.first {margin-left: 220px;}
+
+.other {display: none;}
