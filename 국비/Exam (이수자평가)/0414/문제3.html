@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제3</title>
+    <style type="text/css">
+    /*common*/
+    #wrap {font-size: 12px; font-family: Dotum; margin: 0; padding: 0;}
+    #wrap a {text-decoration: none; color:#000;}
+    #wrap ul, #wrap li {list-style-type: none;}
+
+    /*주메뉴*/
+    ul.gnb {position: relative; width: 1280px;}
+    ul.gnb::after {content: ""; display: block; clear:both;}
+    .gnb > li {float: left; font-size: 18px; padding: 0 100px 0 0;}
+    .gnb > li > ul > li {float: left; padding: 0 30px 0 0;}
+    .gnb > li > ul {position: absolute; display: none;}
+    .gnb > li:hover ul {display: block; background:skyblue;}
+    .gnb > li:nth-of-type(1) > ul {left: 0px;}
+    .gnb > li:nth-of-type(2) > ul {left: 20px;}
+    .gnb > li:nth-of-type(3) > ul {left: 40px;}
+    .gnb > li:nth-of-type(4) > ul {left: 40px;}
+    .gnb > li:nth-of-type(5) > ul {left: 820px;}
+    .gnb > li:nth-of-type(6) > ul {left: 700px;}
+    </style>
+</head>
+<body>
+    <h2>3. ol, ul, dl 태그를 사용해서 순서형, 비순서형, 정의형 리스트 기본 목록을 작성하시오. ul태그를 사용해서 아래 제시된 이미지에 대로 주메뉴를 작성하시오. (총30점)</h2>
+    <hr>
+    <h3>ol : 순서형 리스트</h3>
+    <ol>
+        <li>물을 끓인다</li>
+        <li>스프와 후레이크를 넣는다</li>
+        <li>면을 넣는다</li>
+        <li>맛있게 먹는다</li>
+    </ol>
+    <h3>dl : 정의형 리스트</h3>
+    <dl>
+        <dt>수소</dt>
+        <dd>주기율표 1족 1주기에 속하는 비금속원소로 원소기호 H</dd>
+        <dt>헬륨</dt>
+        <dd>원소주기율표 상에서 1주기 18족에 속하는 비활성 기체</dd>
+    </dl>
+    <h3>ul : 비순서형 리스트</h3>
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+    </ul>
+    <hr>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <h1 class="logo"><a href="#">웹접근성연구소</a></h1>
+            <!-- gnb -->
+            <ul class="gnb">
+                <li><a href="#">웹 접근성의 이해</a>
+                    <ul>
+                        <li><a href="#">웹 접근성의 정의</a></li>
+                        <li><a href="#">법·제도</a></li>
+                        <li><a href="#">장애인의 웹사이트 이용 이해</a></li>
+                        <li><a href="#">관련사이트</a></li>
+                        <li><a href="#">홍보동영상</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">품질마크</a>
+                    <ul>
+                        <li><a href="#">품질마크소개</a></li>
+                        <li><a href="#">인증위원회</a></li>
+                        <li><a href="#">인증심사기준</a></li>
+                        <li><a href="#">품질마크 심사 접수</a></li>
+                        <li><a href="#">진행상태 확인</a></li>
+                        <li><a href="#">인증사이트 현황</a></li>
+                        <li><a href="#">인증사이트 통계</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">교육/세미나</a>
+                    <ul>
+                        <li><a href="#">웹 접근성 교육개요</a></li>
+                        <li><a href="#">교육 일정 안내 및 접수</a></li>
+                        <li><a href="#">교육 접수 확인</a></li>
+                        <li><a href="#">세미나 안내 및 접수</a></li>
+                        <li><a href="#">세미나 접수 확인</a></li>
+                        <li><a href="#">세미나 자료실</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">개발자 아카이브</a>
+                    <ul>
+                        <li><a href="#">웹 콘텐츠 제작기법</a></li>
+                        <li><a href="#">웹 콘텐츠 신기술 제작기법</a></li>
+                        <li><a href="#">K-WAH 3.0</a></li>
+                        <li><a href="#">전문가 블로그</a></li>
+                        <li><a href="#">전문가 컬럼</a></li>
+                        <li><a href="#">W3C 접근성 문서 번역</a></li>
+                        <li><a href="#">웹 콘텐츠 접근성 2.0</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">자문서비스</a>
+                    <ul>
+                        <li><a href="#">온라인 자문서비스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">자료실</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">웹 접근성 뉴스</a></li>
+                        <li><a href="#">표준 자료실</a></li>
+                        <li><a href="#">동향 및 연구자료</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //gnb -->
+        </header>
+        <!-- //header -->
+        <!-- container -->
+        <div id="container">
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <footer>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제7</title>
+</head>
+<body>
+    <h2>7. 자바스크립트 & 제이쿼리 내장 객체를 서술하시오. (총15점)</h2>
+    <hr>
+<dl>
+    <dt>Date객체</dt>
+    <dd>
+        <dl>
+            <dt>날짜 정보 제공 메서드종류</dt>
+            <dd>
+                <ul>
+                    <li>getFullYear() : 날짜에서 연도에 대한 정보를 제공</li>
+                    <li>getMonth() : 날짜에서 월에 대한 정보를 제공</li>
+                    <li>getDate() : 날짜에서 일에 대한 정보를 제공</li>
+                    <li>getDay() : 날짜에서 요일에 대한 정보를 제공</li>
+                    <li>getHours() : 시간에서 시에 대한 정보를 제공</li>
+                    <li>getMinutes() : 시간에서 분에 대한 정보를 제공</li>
+                    <li>getSeconds() : 시간에서 초에 대한 정보를 제공</li>
+                    <li>getMillisecond() : 시간에서 밀리초(1/1000)에 대한 정보를 제공</li>
+                    <li>getTime() : 1970년 1월 1일 이후 경과 시간을 밀리초로 제공</li>
+                </ul>
+            </dd>
+            <dt>날짜 지정 메서드종류</dt>
+            <dd>
+                <ul>
+                    <li>setFullYear() : 날짜에서 '연도'만 새로 지정할 때</li>
+                    <li>setMonth() : 날짜에서 '월'만 새로 지정할 때</li>
+                    <li>setDate() : 날짜에서 '일'만 새로 지정할 때</li>
+                    <li>setHours() : '시간'만 새로 지정할 때</li>
+                    <li>setMinutes() : '분'만 새로 지정할 때</li>
+                    <li>setSeconds() : '초'만 새로 지정할 때</li>
+                    <li>setMillisecond() : '밀리초'만 새로 지정할 때</li>
+                    <li>setTime() : 현재까지 경과 된 밀리초를새로 지정할 때</li>
+                    <li>toGMTString() : 날짜를 그리니치 천문대 표준시로 표시</li>
+                    <li>toString() : 날짜를 문자 형식으로 표시</li>
+                </ul>
+            </dd>
+        </dl>
+    </dd>
+    <dt>Math객체</dt>
+    <dd>
+        <dl>
+            <dt>메서드종류</dt>
+            <dd>
+                <ul>
+                    <li>max(숫자1,숫자2,숫자3) : 숫자중 최대값을 반환</li>
+                    <li>min(숫자1,숫자2,숫자3) : 숫자중 최소값을 반환</li>
+                    <li>round(숫자) : 소수점 첫째 자리를 반올림</li>
+                    <li>ceil(숫자) : 소수점 자리를 무조건 올림</li>
+                    <li>floor(숫자) : 소수점 자리를 무조건 절삭</li>
+                    <li>abs(숫자) : 수의 절대값을 반환</li>
+                    <li>random() : 0과 1사이의 난수를 발생</li>
+                </ul>
+            </dd>
+        </dl>
+    </dd>
+    <dt>String객체</dt>
+    <dd>
+        <dl>
+            <dt>메서드 종류</dt>
+            <dd>
+                <ul>
+                    <li>theTExt.bold() : 텍스트를 진하게 표현하여 반환</li>
+                    <li>theTExt.link("URL") : 텍스트에 링크를 걸어 반환</li>
+                    <li>theTExt.length : 텍스트의 개수를 반환</li>
+                    <li>theTExt.toLowerCase : 영문자를 소문자로 바꿔 반환</li>
+                    <li>theTExt.toUpperCase : 영문자를 대문자로 바꿔 반환</li>
+                    <li>theTExt.indexOf("i") : 처음부터 "i"를 찾아 최초로 일치하는 인덱스 번호를 반환, 없을 경우 -1을 반환</li>
+                    <li>theTExt.lastIndexOf("i") : 끝에서부터 "i"를 찾아 최초로 일치하는 인덱스 번호를 반환, 없을 경우 -1을 반환</li>
+                    <li>theTExt.charAt(5) : 5번 인덱스에 저장된 문자 데이터를 반환</li>
+                    <li>theTExt.substring(4,6) : 4번부터 6번 인덱스까지의 문자 데이터를 반환</li>
+                    <li>theTExt.substr(10,3) : 10번 인덱스부터의 3글자를 반환</li>
+                    <li>theTExt.replace("A","B") : 텍스트중 "A"를 찾아 "B"로 치환해서 반환</li>
+                    <li>theTExt.slice(7,9) : 7번부터 9번인덱스 까지의 일부만 잘라서 반환</li>
+                    <li>theTExt.concat("good") : 끝이 "good"이라는 문자를 결합하여 반환</li>
+                    <li>theTExt.split("") : ""(공백)을 기준으로 데이터를 분리(콤마로)</li>
+                </ul>
+            </dd>
+        </dl>
+    </dd>
+    <dt>Array 객체</dt>
+    <dd>
+        <ul>
+            <li>배열을 이용하면 하나의 변수에 여러개의 데이터를 저장할 수 있음</li>
+        </ul>
+    </dd>
+</dl>
+
+</body>
+
+</html>
